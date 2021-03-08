@@ -74,7 +74,9 @@ int Server::accept_connection(string *ip_addr){
 void my_recvFrom(int fd, vector<char> &v){
     ssize_t index = 0;
     v.resize(65536);
+    cout<<"1"<<endl;
     ssize_t msg_len = recv(fd,&v.data()[index],v.size(),0);
+    cout<<"2"<<endl;
     checkMsgLen(msg_len);
     index+=msg_len;
     Response r=Response(v);
@@ -88,13 +90,13 @@ void my_recvFrom(int fd, vector<char> &v){
         res.insert(res.begin(),v.begin(),v.end());
         while(res.find("0\r\n\r\n")==string::npos){
             v.resize(index+65536);
-            msg_len = recv(fd,&v.data()[index],v.size(),0);
+            msg_len = recv(fd,&v.data()[index],65536,0);
             //checkMsgLen(msg_len);
             if(msg_len<=0){
                 break;
             }
             res="";
-            res.insert(res.begin(),v.begin()+index,v.end());
+            res.insert(res.begin(),v.begin()+index,v.begin()+index+msg_len);
             index+=msg_len;
             cout<<res.size()<<endl;
         }
@@ -176,9 +178,10 @@ void init_fdset(fd_set &readfds, vector<int> fds, int &nfds){
 }
 
 void sendString(int socket,string message){
-    char ch[message.size()+1];
-    strcpy(ch,message.c_str());
-    send(socket,ch,sizeof(ch),0);
+    // char ch[message.size()+1]={0};
+    // strcpy(ch,message.c_str());
+    cout<<message.data();
+    send(socket,message.data(),message.size()+1,0);
 }
 
 std::string recvWithLen(int sender_fd,string message,int content_len) {
