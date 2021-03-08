@@ -13,7 +13,7 @@ public:
         errMsg.append(Info);
         errMsg.append(" ");
     }
-    //virtual ~MyException() _NOEXCEPT{}
+  //virtual ~MyException() _NOEXCEPT{}
     virtual const char * what() const throw() {
         return errMsg.c_str();
     }
