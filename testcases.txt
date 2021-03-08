@@ -1,0 +1,101 @@
+==============
+GET
+==============
+www.gov.cn
+1: GET http://www.gov.cn/ HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:18 2021
+2: GET http://ysp.www.gov.cn/013582404bd78ad3c016b8fffefe6a9a/allmobilize.min.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
+3: GET http://www.gov.cn/govweb/xhtml/2016gov/public/pic20181229/jquery.SuperSlide.2.1.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
+4: GET http://www.gov.cn/govweb/xhtml/zhuanti/20190719lkqkcyjglb/js/idangerous.swiper.min.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
+5: GET http://www.gov.cn/govweb/xhtml/2016gov/js/20191226wxShare.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
+6: GET http://www.gov.cn/govweb/xhtml/2016gov/js/jquery.date_input.pack.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
+8: GET http://www.gov.cn/govweb/xhtml/2016gov/js/hoverIndex.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
+11: GET http://www.gov.cn/govweb/xhtml/zhuanti/2017chinaEconomicHighlights/js/jquery.slider.20180517.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
+
+==============
+GET chunked
+==============
+http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx
+1: GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:56:40 2021
+
+
+==============
+POST
+==============
+http://httpbin.org/forms/post
+1: GET http://httpbin.org/forms/post HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:53:51 2021
+2: POST http://httpbin.org/post HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:54:14 2021
+
+=============
+CONNECT
+=============
+www.baidu.com
+133: CONNECT www.baidu.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:58:49 2021
+133: Responding "HTTP/1.1 200 OK"
+134: CONNECT dss0.bdstatic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:58:49 2021
+135: CONNECT www.baidu.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:58:49 2021
+136: CONNECT www.baidu.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:58:49 2021
+137: CONNECT hectorstatic.baidu.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:58:49 2021
+138: CONNECT www.baidu.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:58:49 2021
+133: Connection closed
+139: CONNECT dss0.bdstatic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:58:49 2021
+135: Responding "HTTP/1.1 200 OK"
+135: Connection closed
+136: Responding "HTTP/1.1 200 OK"
+136: Connection closed
+
+==============
+Watch video
+==============
+www.iqiyi.com
+1: CONNECT msg.qy.net:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:41 2021
+1: Responding "HTTP/1.1 200 OK"
+2: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:41 2021
+3: CONNECT www.iqiyi.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:43 2021
+3: Responding "HTTP/1.1 200 OK"
+4: CONNECT cache.video.iqiyi.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
+4: Responding "HTTP/1.1 200 OK"
+4: Connection closed
+5: CONNECT stc.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
+5: Responding "HTTP/1.1 200 OK"
+6: CONNECT www.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
+7: CONNECT static-s.iqiyi.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
+8: CONNECT pic2.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
+9: CONNECT pic3.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
+10: CONNECT pic9.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
+11: CONNECT pic7.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
+12: CONNECT pic0.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
+13: CONNECT pic1.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
+8: Responding "HTTP/1.1 200 OK"
+6: Responding "HTTP/1.1 200 OK"
+7: Responding "HTTP/1.1 200 OK"
+9: Responding "HTTP/1.1 200 OK"
+12: Responding "HTTP/1.1 200 OK"
+
+www.bilibili.com
+57: CONNECT www.bilibili.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:51 2021
+58: CONNECT data.bilibili.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:51 2021
+57: Responding "HTTP/1.1 200 OK"
+58: Responding "HTTP/1.1 200 OK"
+59: CONNECT cache.video.iqiyi.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:52 2021
+59: Responding "HTTP/1.1 200 OK"
+60: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:52 2021
+61: GET http://i0.hdslb.com/bfs/archive/44107f806b29c1f7f395dccc55704156cc8268c4.jpg HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:53 2021
+62: CONNECT s1.hdslb.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:53 2021
+63: CONNECT s1.hdslb.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:53 2021
+62: Responding "HTTP/1.1 200 OK"
+63: Responding "HTTP/1.1 200 OK"
+64: CONNECT i0.hdslb.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
+64: Responding "HTTP/1.1 200 OK"
+65: CONNECT i1.hdslb.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
+66: CONNECT i2.hdslb.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
+66: Responding "HTTP/1.1 200 OK"
+65: Responding "HTTP/1.1 200 OK"
+67: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
+68: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
+69: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
+70: GET http://i0.hdslb.com/favicon.ico HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
+72: CONNECT api.bilibili.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
+73: CONNECT cm.bilibili.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
+72: Responding "HTTP/1.1 200 OK"
+73: Responding "HTTP/1.1 200 OK"
+
