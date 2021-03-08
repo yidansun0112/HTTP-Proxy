@@ -1,0 +1,46 @@
+1: CONNECT www.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:13 2021
+1: Responding "HTTP/1.1 200 OK"
+2: CONNECT m.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:15 2021
+2: Responding "HTTP/1.1 200 OK"
+3: CONNECT misc.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:15 2021
+4: CONNECT wl.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:15 2021
+3: Responding "HTTP/1.1 200 OK"
+4: Responding "HTTP/1.1 200 OK"
+1: Connection closed
+5: CONNECT mercury.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+5: Responding "HTTP/1.1 200 OK"
+7: CONNECT floor.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+6: CONNECT passport.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+8: CONNECT api.m.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+7: Responding "HTTP/1.1 200 OK"
+6: Responding "HTTP/1.1 200 OK"
+8: Responding "HTTP/1.1 200 OK"
+9: CONNECT passport.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+9: Responding "HTTP/1.1 200 OK"
+6: Connection closed
+10: CONNECT img1.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+9: Connection closed
+10: Responding "HTTP/1.1 200 OK"
+11: CONNECT fd.3.cn:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+14: CONNECT img30.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+13: CONNECT img11.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+12: CONNECT img20.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+15: CONNECT img10.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+16: CONNECT lapi.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+11: Responding "HTTP/1.1 200 OK"
+14: Responding "HTTP/1.1 200 OK"
+12: Responding "HTTP/1.1 200 OK"
+13: Responding "HTTP/1.1 200 OK"
+16: Responding "HTTP/1.1 200 OK"
+15: Responding "HTTP/1.1 200 OK"
+17: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+18: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+19: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+20: CONNECT img12.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
+20: Responding "HTTP/1.1 200 OK"
+21: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:23 2021
+22: CONNECT wq.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:24 2021
+22: Responding "HTTP/1.1 200 OK"
+23: CONNECT im-x.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:26 2021
+23: Responding "HTTP/1.1 200 OK"
+23: Connection closed
