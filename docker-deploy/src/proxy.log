@@ -1,629 +1,570 @@
-1: GET http://scratchpads.org/ HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:35 2021
+1: GET http://detectportal.firefox.com/success.txt HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:12 2021
+2: CONNECT content-signature-2.cdn.mozilla.net:443 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:13 2021
 1: not in cache
-1: Requesting GET http://scratchpads.org/ HTTP/1.1 from scratchpads.org
-1: Received HTTP/1.1 200 OK from scratchpads.org
-1: cached, expires at Mon, 08 Mar 2021 15:53:04 GMT
+1: Requesting GET http://detectportal.firefox.com/success.txt HTTP/1.1 from detectportal.firefox.com
+1: Received HTTP/1.1 200 OK from detectportal.firefox.com
+1: cached, but requires re-validation
 1: Responding HTTP/1.1 200 OK
-2: GET http://scratchpads.org/assets/why/accordion.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:40 2021
-3: GET http://scratchpads.org/css/main.css HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:40 2021
-4: GET http://scratchpads.org/assets/index.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:40 2021
-5: GET http://scratchpads.org/css/index.css HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:40 2021
+2: Responding "HTTP/1.1 200 OK"
+2: Connection closed
+3: GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:13 2021
+4: GET http://detectportal.firefox.com/success.txt?ipv6 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:14 2021
 3: not in cache
-3: Requesting GET http://scratchpads.org/css/main.css HTTP/1.1 from scratchpads.org
-3: Received HTTP/1.1 200 OK from scratchpads.org
-3: cached, expires at Mon, 08 Mar 2021 15:41:11 GMT
-3: Responding HTTP/1.1 200 OK
-2: not in cache
-2: Requesting GET http://scratchpads.org/assets/why/accordion.js HTTP/1.1 from scratchpads.org
+3: Requesting GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1 from detectportal.firefox.com
 4: not in cache
-4: Requesting GET http://scratchpads.org/assets/index.js HTTP/1.1 from scratchpads.org
-2: Received HTTP/1.1 304 Not Modified from scratchpads.org
-2: not cacheable because not 200 OK
-2: Responding HTTP/1.1 304 Not Modified
-4: Received HTTP/1.1 304 Not Modified from scratchpads.org
-4: not cacheable because not 200 OK
-4: Responding HTTP/1.1 304 Not Modified
-6: CONNECT platform.twitter.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:44 2021
-5: not in cache
-5: Requesting GET http://scratchpads.org/css/index.css HTTP/1.1 from scratchpads.org
-5: Received HTTP/1.1 200 OK from scratchpads.org
-5: cached, expires at Mon, 08 Mar 2021 16:09:17 GMT
-5: Responding HTTP/1.1 200 OK
-7: GET http://scratchpads.org/assets/logo/logo-home.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-8: GET http://scratchpads.org/assets/case-studies/solanaceae-source.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-9: GET http://scratchpads.org/assets/join/join-create.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-10: GET http://scratchpads.org/assets/join/join-sandbox.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-11: GET http://scratchpads.org/assets/join/join-training.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-12: GET http://scratchpads.org/assets/join/join-ambassador.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-13: GET http://scratchpads.org/assets/case-studies/dest.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-14: GET http://scratchpads.org/assets/case-studies/african-ichthyology.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-15: GET http://scratchpads.org/assets/case-studies/antkey.jpg HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-16: GET http://scratchpads.org/assets/case-studies/sampled-red-list.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-17: GET http://scratchpads.org/assets/join/join-read.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-18: GET http://scratchpads.org/assets/index/feed-icon.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-19: GET http://scratchpads.org/assets/index/twitter.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-20: GET http://scratchpads.org/assets/join/join-develop.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-21: GET http://scratchpads.org/assets/sponsor-logos/ner.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-22: GET http://scratchpads.org/assets/sponsor-logos/emonocot.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-23: GET http://scratchpads.org/assets/sponsor-logos/vibrant.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-25: GET http://scratchpads.org/assets/sponsor-logos/nhm.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-26: GET http://maps.google.com/maps/ms?msa=0&msid=207476008910733911886.0004aa0d615ad69652070&ie=UTF8&t=m&vpsrc=6&source=embed&ll=26.431228,29.53125&spn=150.379743,298.828125&z=1&output=embed HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-24: GET http://scratchpads.org/assets/sponsor-logos/einfra.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:45 2021
-7: not in cache
-7: Requesting GET http://scratchpads.org/assets/logo/logo-home.png HTTP/1.1 from scratchpads.org
-12: not in cache
-12: Requesting GET http://scratchpads.org/assets/join/join-ambassador.png HTTP/1.1 from scratchpads.org
-19: not in cache
-19: Requesting GET http://scratchpads.org/assets/index/twitter.png HTTP/1.1 from scratchpads.org
-12: Received HTTP/1.1 304 Not Modified from scratchpads.org
-12: not cacheable because not 200 OK
-12: Responding HTTP/1.1 304 Not Modified
-7: Received HTTP/1.1 304 Not Modified from scratchpads.org
-7: not cacheable because not 200 OK
-7: Responding HTTP/1.1 304 Not Modified
-19: Received HTTP/1.1 200 OK from scratchpads.org
-19: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
-19: Responding HTTP/1.1 200 OK
-8: not in cache
-8: Requesting GET http://scratchpads.org/assets/case-studies/solanaceae-source.png HTTP/1.1 from scratchpads.org
+4: Requesting GET http://detectportal.firefox.com/success.txt?ipv6 HTTP/1.1 from detectportal.firefox.com
+3: Received HTTP/1.1 200 OK from detectportal.firefox.com
+3: cached, but requires re-validation
+3: Responding HTTP/1.1 200 OK
+4: Received HTTP/1.1 200 OK from detectportal.firefox.com
+4: cached, but requires re-validation
+4: Responding HTTP/1.1 200 OK
+6: CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:17 2021
+6: Responding "HTTP/1.1 200 OK"
+7: CONNECT safebrowsing.googleapis.com:443 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:18 2021
+7: Responding "HTTP/1.1 200 OK"
+8: POST http://ocsp.pki.goog/gts1o1core HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:19 2021
+9: CONNECT snippets.cdn.mozilla.net:443 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:19 2021
+10: CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:20 2021
+9: Responding "HTTP/1.1 200 OK"
+11: GET http://www.gov.cn/ HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:20 2021
+12: CONNECT push.services.mozilla.com:443 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:20 2021
+7: Connection closed
+10: Responding "HTTP/1.1 200 OK"
+12: Responding "HTTP/1.1 200 OK"
+5: WARNING invalid request from 172.18.0.1 @ Mon Mar  8 16:51:20 2021
+13: POST http://ocsp.digicert.com/ HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:21 2021
 11: not in cache
-11: Requesting GET http://scratchpads.org/assets/join/join-training.png HTTP/1.1 from scratchpads.org
-10: not in cache
-10: Requesting GET http://scratchpads.org/assets/join/join-sandbox.png HTTP/1.1 from scratchpads.org
-22: not in cache
-22: Requesting GET http://scratchpads.org/assets/sponsor-logos/emonocot.png HTTP/1.1 from scratchpads.org
-27: CONNECT www.artsci.utoronto.ca:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:46 2021
-11: Received HTTP/1.1 304 Not Modified from scratchpads.org
-11: not cacheable because not 200 OK
-10: Received HTTP/1.1 304 Not Modified from scratchpads.org
-10: not cacheable because not 200 OK
-11: Responding HTTP/1.1 304 Not Modified
-10: Responding HTTP/1.1 304 Not Modified
-22: Received HTTP/1.1 200 OK from scratchpads.org
-22: cached, expires at Mon, 08 Mar 2021 08:02:01 GMT
-22: Responding HTTP/1.1 200 OK
-27: Responding "HTTP/1.1 200 OK"
-8: Received HTTP/1.1 200 OK from scratchpads.org
-8: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
-8: Responding HTTP/1.1 200 OK
-9: not in cache
-9: Requesting GET http://scratchpads.org/assets/join/join-create.png HTTP/1.1 from scratchpads.org
-17: not in cache
-14: not in cache
-14: Requesting GET http://scratchpads.org/assets/case-studies/african-ichthyology.png HTTP/1.1 from scratchpads.org
-17: Requesting GET http://scratchpads.org/assets/join/join-read.png HTTP/1.1 from scratchpads.org
-15: not in cache
-15: Requesting GET http://scratchpads.org/assets/case-studies/antkey.jpg HTTP/1.1 from scratchpads.org
-25: not in cache
-25: Requesting GET http://scratchpads.org/assets/sponsor-logos/nhm.png HTTP/1.1 from scratchpads.org
-24: not in cache
-24: Requesting GET http://scratchpads.org/assets/sponsor-logos/einfra.png HTTP/1.1 from scratchpads.org
-9: Received HTTP/1.1 200 OK from scratchpads.org
-9: cached, expires at Mon, 08 Mar 2021 16:09:17 GMT
-9: Responding HTTP/1.1 200 OK
-17: Received HTTP/1.1 200 OK from scratchpads.org
-17: cached, expires at Mon, 08 Mar 2021 16:09:17 GMT
-17: Responding HTTP/1.1 200 OK
-15: Received HTTP/1.1 200 OK from scratchpads.org
-15: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
-15: Responding HTTP/1.1 200 OK
-25: Received HTTP/1.1 200 OK from scratchpads.org
-25: cached, expires at Mon, 08 Mar 2021 13:43:02 GMT
-25: Responding HTTP/1.1 200 OK
-24: Received HTTP/1.1 200 OK from scratchpads.org
-24: cached, expires at Mon, 08 Mar 2021 08:02:01 GMT
-24: Responding HTTP/1.1 200 OK
-28: CONNECT maxcdn.bootstrapcdn.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-29: CONNECT www.artsci.utoronto.ca:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-30: CONNECT cdn.datatables.net:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-31: CONNECT www.artsci.utoronto.ca:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-32: CONNECT code.jquery.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-33: CONNECT www.artsci.utoronto.ca:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-34: CONNECT fonts.googleapis.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-35: CONNECT www.artsci.utoronto.ca:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-36: CONNECT cdn.datatables.net:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-37: CONNECT www.artsci.utoronto.ca:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-39: GET http://scratchpads.org/assets/why/octopus-square.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-38: GET http://scratchpads.org/assets/why/fern-square.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-40: GET http://scratchpads.org/assets/why/octopus-big.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-41: GET http://scratchpads.org/assets/why/flower-big.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-42: GET http://scratchpads.org/assets/why/flower-square.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-44: GET http://scratchpads.org/assets/external-link-support.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-43: GET http://scratchpads.org/assets/external-link-develop.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-18: not in cache
-18: Requesting GET http://scratchpads.org/assets/index/feed-icon.png HTTP/1.1 from scratchpads.org
-45: GET http://scratchpads.org/assets/why/fern-big.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-46: GET http://scratchpads.org/assets/why/weevil-square.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-34: Responding "HTTP/1.1 200 OK"
-47: GET http://scratchpads.org/assets/why/weevil-big.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-29: Responding "HTTP/1.1 200 OK"
-48: POST http://ocsp.pki.goog/gts1o1core HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:48 2021
-31: Responding "HTTP/1.1 200 OK"
-30: Responding "HTTP/1.1 200 OK"
-28: Responding "HTTP/1.1 200 OK"
-39: not in cache
-39: Requesting GET http://scratchpads.org/assets/why/octopus-square.png HTTP/1.1 from scratchpads.org
-33: Responding "HTTP/1.1 200 OK"
-37: Responding "HTTP/1.1 200 OK"
-35: Responding "HTTP/1.1 200 OK"
-36: Responding "HTTP/1.1 200 OK"
-18: Received HTTP/1.1 200 OK from scratchpads.org
-18: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
-18: Responding HTTP/1.1 200 OK
-14: Received HTTP/1.1 200 OK from scratchpads.org
-14: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
-14: Responding HTTP/1.1 200 OK
-39: Received HTTP/1.1 200 OK from scratchpads.org
-39: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
-39: Responding HTTP/1.1 200 OK
-21: not in cache
-21: Requesting GET http://scratchpads.org/assets/sponsor-logos/ner.png HTTP/1.1 from scratchpads.org
-32: Responding "HTTP/1.1 200 OK"
-38: not in cache
-38: Requesting GET http://scratchpads.org/assets/why/fern-square.png HTTP/1.1 from scratchpads.org
-44: not in cache
-44: Requesting GET http://scratchpads.org/assets/external-link-support.png HTTP/1.1 from scratchpads.org
-47: not in cache
-47: Requesting GET http://scratchpads.org/assets/why/weevil-big.png HTTP/1.1 from scratchpads.org
-21: Received HTTP/1.1 200 OK from scratchpads.org
-21: cached, expires at Mon, 08 Mar 2021 13:43:01 GMT
-21: Responding HTTP/1.1 200 OK
-36: Connection closed
-38: Received HTTP/1.1 304 Not Modified from scratchpads.org
-38: not cacheable because not 200 OK
-38: Responding HTTP/1.1 304 Not Modified
-44: Received HTTP/1.1 200 OK from scratchpads.org
-44: cached, expires at Mon, 08 Mar 2021 09:06:49 GMT
-44: Responding HTTP/1.1 200 OK
-47: Received HTTP/1.1 200 OK from scratchpads.org
-47: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
-47: Responding HTTP/1.1 200 OK
-13: not in cache
-13: Requesting GET http://scratchpads.org/assets/case-studies/dest.png HTTP/1.1 from scratchpads.org
-23: not in cache
-23: Requesting GET http://scratchpads.org/assets/sponsor-logos/vibrant.png HTTP/1.1 from scratchpads.org
-43: not in cache
-43: Requesting GET http://scratchpads.org/assets/external-link-develop.png HTTP/1.1 from scratchpads.org
-23: Received HTTP/1.1 200 OK from scratchpads.org
-23: cached, expires at Mon, 08 Mar 2021 09:03:23 GMT
-23: Responding HTTP/1.1 200 OK
-43: Received HTTP/1.1 304 Not Modified from scratchpads.org
-43: not cacheable because not 200 OK
-43: Responding HTTP/1.1 304 Not Modified
-34: Connection closed
-13: Received HTTP/1.1 200 OK from scratchpads.org
-13: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
-13: Responding HTTP/1.1 200 OK
-41: not in cache
-41: Requesting GET http://scratchpads.org/assets/why/flower-big.png HTTP/1.1 from scratchpads.org
-20: not in cache
-20: Requesting GET http://scratchpads.org/assets/join/join-develop.png HTTP/1.1 from scratchpads.org
-20: Received HTTP/1.1 304 Not Modified from scratchpads.org
-20: not cacheable because not 200 OK
-20: Responding HTTP/1.1 304 Not Modified
-41: Received HTTP/1.1 200 OK from scratchpads.org
-41: cached, expires at Mon, 08 Mar 2021 16:09:19 GMT
-41: Responding HTTP/1.1 200 OK
-40: not in cache
-40: Requesting GET http://scratchpads.org/assets/why/octopus-big.png HTTP/1.1 from scratchpads.org
-45: not in cache
-45: Requesting GET http://scratchpads.org/assets/why/fern-big.png HTTP/1.1 from scratchpads.org
-45: Received HTTP/1.1 304 Not Modified from scratchpads.org
-45: not cacheable because not 200 OK
-45: Responding HTTP/1.1 304 Not Modified
-33: Connection closed
-40: Received HTTP/1.1 200 OK from scratchpads.org
-40: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
-40: Responding HTTP/1.1 200 OK
-35: Connection closed
-31: Connection closed
-29: Connection closed
-37: Connection closed
-27: Connection closed
-51: CONNECT www.artsci.utoronto.ca:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:55 2021
-49: CONNECT www.artsci.utoronto.ca:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:55 2021
-50: CONNECT www.artsci.utoronto.ca:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:55 2021
-52: CONNECT www.artsci.utoronto.ca:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:55 2021
-53: CONNECT www.artsci.utoronto.ca:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:55 2021
-54: CONNECT www.googletagmanager.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:55 2021
-51: Responding "HTTP/1.1 200 OK"
-53: Responding "HTTP/1.1 200 OK"
-52: Responding "HTTP/1.1 200 OK"
-49: Responding "HTTP/1.1 200 OK"
-50: Responding "HTTP/1.1 200 OK"
-54: Responding "HTTP/1.1 200 OK"
-55: CONNECT www.youtube.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:56 2021
-56: CONNECT fonts.gstatic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:34:56 2021
-42: not in cache
-42: Requesting GET http://scratchpads.org/assets/why/flower-square.png HTTP/1.1 from scratchpads.org
-55: Responding "HTTP/1.1 200 OK"
-56: Responding "HTTP/1.1 200 OK"
-42: Received HTTP/1.1 200 OK from scratchpads.org
-42: cached, expires at Mon, 08 Mar 2021 16:09:19 GMT
-42: Responding HTTP/1.1 200 OK
+11: Requesting GET http://www.gov.cn/ HTTP/1.1 from www.gov.cn
+11: Received HTTP/1.1 200 OK from www.gov.cn
+11: cached, but requires re-validation
+11: Responding HTTP/1.1 200 OK
+14: CONNECT shavar.services.mozilla.com:443 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:23 2021
+14: Responding "HTTP/1.1 200 OK"
+14: Connection closed
+16: GET http://www.gov.cn/govweb/xhtml/govwfcss/govweb/c1292h/5591600_FZZHUNYSK_1615216953649/govwf_fzzhunysk_ys_3168696356.css?timer=1615216954369 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:31 2021
+15: WARNING invalid request from 172.18.0.1 @ Mon Mar  8 16:51:31 2021
+17: GET http://www.gov.cn/govweb/xhtml/govwfcss/govweb/c10801/5591601_FZZHUNYSK_1615216980734/govwf_fzzhunysk_ys_3168696356.css?timer=1615216981474 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:31 2021
+18: GET http://static.gridsumdissector.com/js/Clients/GWD-801026-069B76/gs.js HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:31 2021
 16: not in cache
-16: Requesting GET http://scratchpads.org/assets/case-studies/sampled-red-list.png HTTP/1.1 from scratchpads.org
-16: Received HTTP/1.1 200 OK from scratchpads.org
-16: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
+16: Requesting GET http://www.gov.cn/govweb/xhtml/govwfcss/govweb/c1292h/5591600_FZZHUNYSK_1615216953649/govwf_fzzhunysk_ys_3168696356.css?timer=1615216954369 HTTP/1.1 from www.gov.cn
+18: not in cache
+18: Requesting GET http://static.gridsumdissector.com/js/Clients/GWD-801026-069B76/gs.js HTTP/1.1 from static.gridsumdissector.com
+16: Received HTTP/1.1 200 OK from www.gov.cn
+16: cached, but requires re-validation
 16: Responding HTTP/1.1 200 OK
-54: Connection closed
+18: Received HTTP/1.1 200 OK from static.gridsumdissector.com
+18: cached, but requires re-validation
+18: Responding HTTP/1.1 200 OK
+17: not in cache
+17: Requesting GET http://www.gov.cn/govweb/xhtml/govwfcss/govweb/c10801/5591601_FZZHUNYSK_1615216980734/govwf_fzzhunysk_ys_3168696356.css?timer=1615216981474 HTTP/1.1 from www.gov.cn
+17: Received HTTP/1.1 200 OK from www.gov.cn
+17: cached, but requires re-validation
+17: Responding HTTP/1.1 200 OK
+20: GET http://www.gov.cn/govweb/c1293/202103/5591431/images/2bb31a7ffeda466098be326cf585f917.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:33 2021
+19: GET http://www.gov.cn/govweb/c9834/202103/5589927/images/1dcbed3fa69c444eb032aca11a111d14.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:33 2021
+22: GET http://www.gov.cn/govweb/c15008/202009/5547485/images/67da8bc9f8344433a93c63ccfcfa142b.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:33 2021
+21: GET http://www.gov.cn/govweb/c15008/202101/5577665/images/8d65ca3b63df498b90dae7bed8965f73.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:33 2021
+23: GET http://www.gov.cn/govweb/c15008/202009/5547486/images/df4e67417119470cba2f855d7bd151b3.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:33 2021
+24: GET http://www.gov.cn/govweb/c15008/202009/5547488/images/560888c6e8014e7d943b690f474ea86b.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:33 2021
+25: GET http://www.gov.cn/zhuanti/20190109weixinfenxiangimg/150.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:33 2021
+26: GET http://www.gov.cn/govweb/c10710/202103/5591077/images/1087d8d148504ef58784a727e8c48209.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:33 2021
+27: GET http://www.gov.cn/govweb/c15008/202009/5547502/images/993d3a6fd409465d88d52fafedc1216c.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:33 2021
+20: not in cache
+20: Requesting GET http://www.gov.cn/govweb/c1293/202103/5591431/images/2bb31a7ffeda466098be326cf585f917.jpg HTTP/1.1 from www.gov.cn
+19: not in cache
+19: Requesting GET http://www.gov.cn/govweb/c9834/202103/5589927/images/1dcbed3fa69c444eb032aca11a111d14.png HTTP/1.1 from www.gov.cn
+19: Received HTTP/1.1 200 OK from www.gov.cn
+19: cached, but requires re-validation
+19: Responding HTTP/1.1 200 OK
+20: Received HTTP/1.1 200 OK from www.gov.cn
+20: cached, but requires re-validation
+20: Responding HTTP/1.1 200 OK
+23: not in cache
+23: Requesting GET http://www.gov.cn/govweb/c15008/202009/5547486/images/df4e67417119470cba2f855d7bd151b3.png HTTP/1.1 from www.gov.cn
+26: not in cache
+26: Requesting GET http://www.gov.cn/govweb/c10710/202103/5591077/images/1087d8d148504ef58784a727e8c48209.jpg HTTP/1.1 from www.gov.cn
+25: not in cache
+25: Requesting GET http://www.gov.cn/zhuanti/20190109weixinfenxiangimg/150.jpg HTTP/1.1 from www.gov.cn
+23: Received HTTP/1.1 200 OK from www.gov.cn
+23: cached, but requires re-validation
+23: Responding HTTP/1.1 200 OK
+26: Received HTTP/1.1 200 OK from www.gov.cn
+26: cached, but requires re-validation
+26: Responding HTTP/1.1 200 OK
+25: Received HTTP/1.1 200 OK from www.gov.cn
+25: cached, but requires re-validation
+25: Responding HTTP/1.1 200 OK
+27: not in cache
+27: Requesting GET http://www.gov.cn/govweb/c15008/202009/5547502/images/993d3a6fd409465d88d52fafedc1216c.png HTTP/1.1 from www.gov.cn
+22: not in cache
+22: Requesting GET http://www.gov.cn/govweb/c15008/202009/5547485/images/67da8bc9f8344433a93c63ccfcfa142b.png HTTP/1.1 from www.gov.cn
+27: Received HTTP/1.1 200 OK from www.gov.cn
+27: cached, but requires re-validation
+27: Responding HTTP/1.1 200 OK
+22: Received HTTP/1.1 200 OK from www.gov.cn
+22: cached, but requires re-validation
+22: Responding HTTP/1.1 200 OK
+28: GET http://www.gov.cn/govweb/c1296/202103/5591299/images/cd286dc8a2a04e1c9d271c6e367be973.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:34 2021
+31: GET http://www.gov.cn/govweb/c15008/202101/5577663/images/e57b3baa32244635a4e9d19070dd79a6.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:34 2021
+33: GET http://www.gov.cn/govweb/c1293/202103/5591346/images/381e07a34c2f4b359a5514d7b6284a18.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:34 2021
+29: GET http://www.gov.cn/govweb/c15008/202101/5577660/images/86e802b64b094db6ba8b62fb55984651.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:34 2021
+32: GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/201712_radio1.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:34 2021
+30: GET http://www.gov.cn/govweb/c15008/202101/5577662/images/8afcc365e7d14d92b43ef866035de15d.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:34 2021
+34: GET http://www.gov.cn/govweb/c1293/202103/5591344/images/fb0cf10778fa4c32bd6deae8c509f9d1.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:34 2021
+32: not in cache
+32: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/201712_radio1.png HTTP/1.1 from www.gov.cn
+33: not in cache
+33: Requesting GET http://www.gov.cn/govweb/c1293/202103/5591346/images/381e07a34c2f4b359a5514d7b6284a18.jpg HTTP/1.1 from www.gov.cn
+36: GET http://www.gov.cn/govweb/c15008/202101/5577661/images/2a2ed2abdabf4338a5e56bd44a9139aa.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:35 2021
+35: GET http://www.gov.cn/govweb/xhtml/2016gov/images/zhengce/policyDocumentBank.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:35 2021
+39: GET http://www.gov.cn/govweb/xhtml/2016gov/fuwu/images/20200927syfwbk/gwyzcdwpt_ltw.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:35 2021
+33: Received HTTP/1.1 200 OK from www.gov.cn
+38: GET http://www.gov.cn/govweb/c15008/202009/5547507/images/0b591092b9d148e4a1fa587d4242198b.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:35 2021
+41: GET http://www.gov.cn/govweb/xhtml/2016gov/20170512ceshi/images/wxzlsjhpic0512.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:35 2021
+40: GET http://www.gov.cn/govweb/xhtml/2019zhuanti/20200927yshjjxs/images/20210122tjzfznzbzt.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:35 2021
+37: GET http://www.gov.cn/govweb/c6121/202101/5577314/images/5a9f924843bb4a72ad1ba760085d997d.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:35 2021
+46: GET http://www.gov.cn/2016public/bottom.htm HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:35 2021
+33: cached, but requires re-validation
+33: Responding HTTP/1.1 200 OK
+45: GET http://www.gov.cn/govweb/xhtml/govwfcss/govweb/c1292h/5591600_FZZHUNYSK_1615216953649/govwf_fzzhunysk_ys_3168696356.eot HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:35 2021
+44: GET http://www.gov.cn/govweb/xhtml/2016gov/css/FZZHUNYSK.woff HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:35 2021
+43: GET http://www.gov.cn/govweb/c1295/202103/5590019/images/26f4ec3d25f94f35aa937443411f26ad.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:35 2021
+42: GET http://www.gov.cn/govweb/c1293/202103/5591312/images/3668af804c914071aa418c58e76ce9df.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:35 2021
+32: Received HTTP/1.1 200 OK from www.gov.cn
+32: cached, but requires re-validation
+32: Responding HTTP/1.1 200 OK
+21: not in cache
+21: Requesting GET http://www.gov.cn/govweb/c15008/202101/5577665/images/8d65ca3b63df498b90dae7bed8965f73.png HTTP/1.1 from www.gov.cn
+21: Received HTTP/1.1 200 OK from www.gov.cn
+21: cached, but requires re-validation
+21: Responding HTTP/1.1 200 OK
+34: not in cache
+34: Requesting GET http://www.gov.cn/govweb/c1293/202103/5591344/images/fb0cf10778fa4c32bd6deae8c509f9d1.jpg HTTP/1.1 from www.gov.cn
+31: not in cache
+31: Requesting GET http://www.gov.cn/govweb/c15008/202101/5577663/images/e57b3baa32244635a4e9d19070dd79a6.png HTTP/1.1 from www.gov.cn
+29: not in cache
+29: Requesting GET http://www.gov.cn/govweb/c15008/202101/5577660/images/86e802b64b094db6ba8b62fb55984651.png HTTP/1.1 from www.gov.cn
+31: Received HTTP/1.1 200 OK from www.gov.cn
+31: cached, but requires re-validation
+31: Responding HTTP/1.1 200 OK
+24: not in cache
+24: Requesting GET http://www.gov.cn/govweb/c15008/202009/5547488/images/560888c6e8014e7d943b690f474ea86b.png HTTP/1.1 from www.gov.cn
+29: Received HTTP/1.1 200 OK from www.gov.cn
+29: cached, but requires re-validation
+29: Responding HTTP/1.1 200 OK
+24: Received HTTP/1.1 200 OK from www.gov.cn
+24: cached, but requires re-validation
+24: Responding HTTP/1.1 200 OK
+34: Received HTTP/1.1 200 OK from www.gov.cn
+34: cached, but requires re-validation
+34: Responding HTTP/1.1 200 OK
+30: not in cache
+30: Requesting GET http://www.gov.cn/govweb/c15008/202101/5577662/images/8afcc365e7d14d92b43ef866035de15d.png HTTP/1.1 from www.gov.cn
+30: Received HTTP/1.1 200 OK from www.gov.cn
+30: cached, but requires re-validation
+30: Responding HTTP/1.1 200 OK
+38: not in cache
+38: Requesting GET http://www.gov.cn/govweb/c15008/202009/5547507/images/0b591092b9d148e4a1fa587d4242198b.png HTTP/1.1 from www.gov.cn
+39: not in cache
+39: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/fuwu/images/20200927syfwbk/gwyzcdwpt_ltw.png HTTP/1.1 from www.gov.cn
+38: Received HTTP/1.1 200 OK from www.gov.cn
+38: cached, but requires re-validation
+38: Responding HTTP/1.1 200 OK
+40: not in cache
+40: Requesting GET http://www.gov.cn/govweb/xhtml/2019zhuanti/20200927yshjjxs/images/20210122tjzfznzbzt.jpg HTTP/1.1 from www.gov.cn
+41: not in cache
+41: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/20170512ceshi/images/wxzlsjhpic0512.jpg HTTP/1.1 from www.gov.cn
 46: not in cache
-46: Requesting GET http://scratchpads.org/assets/why/weevil-square.png HTTP/1.1 from scratchpads.org
-46: Received HTTP/1.1 200 OK from scratchpads.org
-46: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
+46: Requesting GET http://www.gov.cn/2016public/bottom.htm HTTP/1.1 from www.gov.cn
+42: not in cache
+42: Requesting GET http://www.gov.cn/govweb/c1293/202103/5591312/images/3668af804c914071aa418c58e76ce9df.jpg HTTP/1.1 from www.gov.cn
+45: not in cache
+45: Requesting GET http://www.gov.cn/govweb/xhtml/govwfcss/govweb/c1292h/5591600_FZZHUNYSK_1615216953649/govwf_fzzhunysk_ys_3168696356.eot HTTP/1.1 from www.gov.cn
+39: Received HTTP/1.1 200 OK from www.gov.cn
+39: cached, but requires re-validation
+39: Responding HTTP/1.1 200 OK
+42: Received HTTP/1.1 200 OK from www.gov.cn
+40: Received HTTP/1.1 200 OK from www.gov.cn
+41: Received HTTP/1.1 200 OK from www.gov.cn
+45: Received HTTP/1.1 200 OK from www.gov.cn
+41: cached, but requires re-validation
+41: Responding HTTP/1.1 200 OK
+45: cached, but requires re-validation
+45: Responding HTTP/1.1 200 OK
+40: cached, but requires re-validation
+40: Responding HTTP/1.1 200 OK
+42: cached, but requires re-validation
+42: Responding HTTP/1.1 200 OK
+35: not in cache
+36: not in cache
+36: Requesting GET http://www.gov.cn/govweb/c15008/202101/5577661/images/2a2ed2abdabf4338a5e56bd44a9139aa.png HTTP/1.1 from www.gov.cn
+35: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/images/zhengce/policyDocumentBank.png HTTP/1.1 from www.gov.cn
+46: Received HTTP/1.1 200 OK from www.gov.cn
+46: cached, but requires re-validation
 46: Responding HTTP/1.1 200 OK
-53: Connection closed
-50: Connection closed
-49: Connection closed
-57: CONNECT tracking.firefox.com.cn:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:02 2021
-57: Responding "HTTP/1.1 200 OK"
-58: CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:02 2021
-59: CONNECT publish-pic-cpu.baidu.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:02 2021
-58: Responding "HTTP/1.1 200 OK"
-59: Responding "HTTP/1.1 200 OK"
-52: Connection closed
-60: CONNECT newtab.firefoxchina.cn:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:03 2021
-60: Responding "HTTP/1.1 200 OK"
-51: Connection closed
-61: GET http://scratchpads.org/ HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:04 2021
+43: not in cache
+37: not in cache
+37: Requesting GET http://www.gov.cn/govweb/c6121/202101/5577314/images/5a9f924843bb4a72ad1ba760085d997d.jpg HTTP/1.1 from www.gov.cn
+36: Received HTTP/1.1 200 OK from www.gov.cn
+36: cached, but requires re-validation
+36: Responding HTTP/1.1 200 OK
+43: Requesting GET http://www.gov.cn/govweb/c1295/202103/5590019/images/26f4ec3d25f94f35aa937443411f26ad.jpg HTTP/1.1 from www.gov.cn
+44: not in cache
+44: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/css/FZZHUNYSK.woff HTTP/1.1 from www.gov.cn
+37: Received HTTP/1.1 200 OK from www.gov.cn
+37: cached, but requires re-validation
+37: Responding HTTP/1.1 200 OK
+43: Received HTTP/1.1 200 OK from www.gov.cn
+43: cached, but requires re-validation
+43: Responding HTTP/1.1 200 OK
+35: Received HTTP/1.1 200 OK from www.gov.cn
+35: cached, but requires re-validation
+35: Responding HTTP/1.1 200 OK
+44: Received HTTP/1.1 200 OK from www.gov.cn
+44: cached, but requires re-validation
+44: Responding HTTP/1.1 200 OK
+47: GET http://www.gov.cn/govweb/xhtml/2016gov/fuwu/images/20200927syfwbk/20201229wdzt.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:36 2021
+48: GET http://www.gov.cn/govweb/xhtml/govwfcss/govweb/c10801/5591601_FZZHUNYSK_1615216980734/govwf_fzzhunysk_ys_3168696356.woff HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:36 2021
+49: GET http://www.gov.cn/govweb/xhtml/govwfcss/govweb/c10801/5591601_FZZHUNYSK_1615216980734/govwf_fzzhunysk_ys_3168696356.eot HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:36 2021
+53: GET http://www.gov.cn/govweb/c10713/201912/5463308/images/e9e4de061b7947a2a7ec5d22c0ccdf50.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:36 2021
+52: GET http://www.gov.cn/govweb/c15008/202101/5577653/images/238cb1e23d6640ba9e77bcfd004a95cc.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:36 2021
+50: GET http://www.gov.cn/govweb/c21731/202011/5560669/images/daff309faf964a0bbe3780e5ae17b21a.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:36 2021
+51: GET http://www.gov.cn/govweb/c2753/202007/5528562/images/2eb081069b73458a99e951f98dfd4896.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:36 2021
+47: not in cache
+47: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/fuwu/images/20200927syfwbk/20201229wdzt.png HTTP/1.1 from www.gov.cn
+48: not in cache
+48: Requesting GET http://www.gov.cn/govweb/xhtml/govwfcss/govweb/c10801/5591601_FZZHUNYSK_1615216980734/govwf_fzzhunysk_ys_3168696356.woff HTTP/1.1 from www.gov.cn
+48: Received HTTP/1.1 200 OK from www.gov.cn
+48: cached, but requires re-validation
+48: Responding HTTP/1.1 200 OK
+47: Received HTTP/1.1 200 OK from www.gov.cn
+47: cached, but requires re-validation
+47: Responding HTTP/1.1 200 OK
+49: not in cache
+49: Requesting GET http://www.gov.cn/govweb/xhtml/govwfcss/govweb/c10801/5591601_FZZHUNYSK_1615216980734/govwf_fzzhunysk_ys_3168696356.eot HTTP/1.1 from www.gov.cn
+50: not in cache
+50: Requesting GET http://www.gov.cn/govweb/c21731/202011/5560669/images/daff309faf964a0bbe3780e5ae17b21a.jpg HTTP/1.1 from www.gov.cn
+54: GET http://www.gov.cn/govweb/c1300q/202103/5590703/images/52bd2852d83a4464ac64b272427bce71.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:37 2021
+50: Received HTTP/1.1 200 OK from www.gov.cn
+55: GET http://www.gov.cn/govweb/c21731/202011/5566029/images/5cdc691cbda842a8af464c13b25e4bb5.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:37 2021
+50: cached, but requires re-validation
+50: Responding HTTP/1.1 200 OK
+49: Received HTTP/1.1 200 OK from www.gov.cn
+53: not in cache
+53: Requesting GET http://www.gov.cn/govweb/c10713/201912/5463308/images/e9e4de061b7947a2a7ec5d22c0ccdf50.jpg HTTP/1.1 from www.gov.cn
+49: cached, but requires re-validation
+49: Responding HTTP/1.1 200 OK
+56: GET http://www.gov.cn/govweb/xhtml/2016gov/20170512ceshi/images/btn0512.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:37 2021
+57: GET http://www.gov.cn/govweb/xhtml/2016gov/images/zhengce/gwyzcwjkImg20191218.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:37 2021
+53: Received HTTP/1.1 200 OK from www.gov.cn
+52: not in cache
+51: not in cache
+51: Requesting GET http://www.gov.cn/govweb/c2753/202007/5528562/images/2eb081069b73458a99e951f98dfd4896.jpg HTTP/1.1 from www.gov.cn
+52: Requesting GET http://www.gov.cn/govweb/c15008/202101/5577653/images/238cb1e23d6640ba9e77bcfd004a95cc.png HTTP/1.1 from www.gov.cn
+53: cached, but requires re-validation
+53: Responding HTTP/1.1 200 OK
+52: Received HTTP/1.1 200 OK from www.gov.cn
+51: Received HTTP/1.1 200 OK from www.gov.cn
+52: cached, but requires re-validation
+52: Responding HTTP/1.1 200 OK
+51: cached, but requires re-validation
+51: Responding HTTP/1.1 200 OK
+54: not in cache
+54: Requesting GET http://www.gov.cn/govweb/c1300q/202103/5590703/images/52bd2852d83a4464ac64b272427bce71.jpg HTTP/1.1 from www.gov.cn
+55: not in cache
+55: Requesting GET http://www.gov.cn/govweb/c21731/202011/5566029/images/5cdc691cbda842a8af464c13b25e4bb5.jpg HTTP/1.1 from www.gov.cn
+56: not in cache
+56: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/20170512ceshi/images/btn0512.png HTTP/1.1 from www.gov.cn
+57: not in cache
+57: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/images/zhengce/gwyzcwjkImg20191218.png HTTP/1.1 from www.gov.cn
+55: Received HTTP/1.1 200 OK from www.gov.cn
+55: cached, but requires re-validation
+55: Responding HTTP/1.1 200 OK
+54: Received HTTP/1.1 200 OK from www.gov.cn
+54: cached, but requires re-validation
+54: Responding HTTP/1.1 200 OK
+56: Received HTTP/1.1 200 OK from www.gov.cn
+57: Received HTTP/1.1 200 OK from www.gov.cn
+56: cached, but requires re-validation
+57: cached, but requires re-validation
+57: Responding HTTP/1.1 200 OK
+56: Responding HTTP/1.1 200 OK
+58: GET http://www.gov.cn/govweb/c1297/202103/5591596/files/d6b073e5bbff45e09bcccb2972111c09.mp3 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:37 2021
+59: GET http://www.gov.cn/govweb/c15008/202101/5577654/images/79f2c8221fea4eb19013433d114a4ba1.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:37 2021
+60: GET http://www.gov.cn/govweb/c15008/202101/5577652/images/c991dfe0e0f6457aaf0090450a12b0ec.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:37 2021
+61: GET http://www.gov.cn/govweb/c15008/202101/5577656/images/4e45e795520b4c7d913519c059953049.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:37 2021
+62: GET http://www.gov.cn/govweb/c10713/201912/5463309/images/2a777b20db724c2d9ca859cad11866d3.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:37 2021
+58: not in cache
+58: Requesting GET http://www.gov.cn/govweb/c1297/202103/5591596/files/d6b073e5bbff45e09bcccb2972111c09.mp3 HTTP/1.1 from www.gov.cn
+65: GET http://www.gov.cn/govweb/xhtml/2016gov/images/zhengce/searchBtn20191218.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:37 2021
+64: GET http://www.gov.cn/govweb/c2753/202001/5466820/images/bac47b58ad8d47039a830aa35f37e1bf.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:37 2021
+63: GET http://www.gov.cn/govweb/xhtml/2016gov/fuwu/images/20200927syfwbk/jiantou.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:37 2021
+60: not in cache
+60: Requesting GET http://www.gov.cn/govweb/c15008/202101/5577652/images/c991dfe0e0f6457aaf0090450a12b0ec.png HTTP/1.1 from www.gov.cn
+59: not in cache
+59: Requesting GET http://www.gov.cn/govweb/c15008/202101/5577654/images/79f2c8221fea4eb19013433d114a4ba1.png HTTP/1.1 from www.gov.cn
+60: Received HTTP/1.1 200 OK from www.gov.cn
+59: Received HTTP/1.1 200 OK from www.gov.cn
+59: cached, but requires re-validation
+59: Responding HTTP/1.1 200 OK
+60: cached, but requires re-validation
+60: Responding HTTP/1.1 200 OK
+58: Received HTTP/1.1 206 Partial Content from www.gov.cn
+58: not cacheable because not 200 OK
 61: not in cache
-61: Requesting GET http://scratchpads.org/ HTTP/1.1 from scratchpads.org
-55: Connection closed
-61: Received HTTP/1.1 200 OK from scratchpads.org
-61: cached, expires at Mon, 08 Mar 2021 15:53:04 GMT
+61: Requesting GET http://www.gov.cn/govweb/c15008/202101/5577656/images/4e45e795520b4c7d913519c059953049.png HTTP/1.1 from www.gov.cn
+58: Responding HTTP/1.1 206 Partial Content
+61: Received HTTP/1.1 200 OK from www.gov.cn
+61: cached, but requires re-validation
 61: Responding HTTP/1.1 200 OK
-62: GET http://scratchpads.org/assets/why/accordion.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:06 2021
-63: GET http://scratchpads.org/css/index.css HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:06 2021
-64: GET http://scratchpads.org/assets/index.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:06 2021
-65: GET http://scratchpads.org/css/main.css HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:06 2021
 62: not in cache
-62: Requesting GET http://scratchpads.org/assets/why/accordion.js HTTP/1.1 from scratchpads.org
-63: not in cache
-63: Requesting GET http://scratchpads.org/css/index.css HTTP/1.1 from scratchpads.org
+62: Requesting GET http://www.gov.cn/govweb/c10713/201912/5463309/images/2a777b20db724c2d9ca859cad11866d3.jpg HTTP/1.1 from www.gov.cn
+62: Received HTTP/1.1 200 OK from www.gov.cn
+62: cached, but requires re-validation
+62: Responding HTTP/1.1 200 OK
 64: not in cache
-64: Requesting GET http://scratchpads.org/assets/index.js HTTP/1.1 from scratchpads.org
-65: not in cache
-65: Requesting GET http://scratchpads.org/css/main.css HTTP/1.1 from scratchpads.org
-63: Received HTTP/1.1 200 OK from scratchpads.org
-63: cached, expires at Mon, 08 Mar 2021 16:09:17 GMT
+64: Requesting GET http://www.gov.cn/govweb/c2753/202001/5466820/images/bac47b58ad8d47039a830aa35f37e1bf.png HTTP/1.1 from www.gov.cn
+64: Received HTTP/1.1 200 OK from www.gov.cn
+64: cached, but requires re-validation
+64: Responding HTTP/1.1 200 OK
+63: not in cache
+63: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/fuwu/images/20200927syfwbk/jiantou.png HTTP/1.1 from www.gov.cn
+66: GET http://www.gov.cn/govweb/c15008/202009/5547483/images/39f70c31c87c443b99a2280bccc90cdd.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:38 2021
+63: Received HTTP/1.1 200 OK from www.gov.cn
+63: cached, but requires re-validation
 63: Responding HTTP/1.1 200 OK
-62: Received HTTP/1.1 304 Not Modified from scratchpads.org
-62: not cacheable because not 200 OK
-62: Responding HTTP/1.1 304 Not Modified
-65: Received HTTP/1.1 200 OK from scratchpads.org
-65: cached, expires at Mon, 08 Mar 2021 16:44:41 GMT
+65: not in cache
+65: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/images/zhengce/searchBtn20191218.png HTTP/1.1 from www.gov.cn
+65: Received HTTP/1.1 200 OK from www.gov.cn
+65: cached, but requires re-validation
 65: Responding HTTP/1.1 200 OK
-67: GET http://scratchpads.org/assets/sponsor-logos/einfra.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-66: GET http://scratchpads.org/assets/index/twitter.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-68: GET http://scratchpads.org/assets/sponsor-logos/nhm.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-69: GET http://scratchpads.org/assets/case-studies/sampled-red-list.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-70: GET http://scratchpads.org/assets/case-studies/dest.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-71: GET http://scratchpads.org/assets/case-studies/african-ichthyology.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-74: GET http://scratchpads.org/assets/sponsor-logos/ner.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-72: GET http://scratchpads.org/assets/index/feed-icon.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-75: GET http://scratchpads.org/assets/case-studies/solanaceae-source.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-73: GET http://scratchpads.org/assets/sponsor-logos/vibrant.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-76: GET http://scratchpads.org/assets/join/join-develop.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-77: GET http://scratchpads.org/assets/join/join-sandbox.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-78: GET http://maps.google.com/maps/ms?msa=0&msid=207476008910733911886.0004aa0d615ad69652070&ie=UTF8&t=m&vpsrc=6&source=embed&ll=26.431228,29.53125&spn=150.379743,298.828125&z=1&output=embed HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-67: in cache, requires validation
-80: GET http://scratchpads.org/assets/join/join-training.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-79: GET http://scratchpads.org/assets/logo/logo-home.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
 66: not in cache
-66: Requesting GET http://scratchpads.org/assets/index/twitter.png HTTP/1.1 from scratchpads.org
-81: GET http://scratchpads.org/assets/join/join-ambassador.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-82: GET http://scratchpads.org/assets/why/octopus-square.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-85: GET http://scratchpads.org/assets/why/flower-big.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-84: GET http://scratchpads.org/assets/external-link-develop.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-83: GET http://scratchpads.org/assets/why/weevil-square.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-86: GET http://scratchpads.org/assets/fonts/Ubuntu.woff HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-89: GET http://scratchpads.org/assets/why/fern-big.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-87: GET http://scratchpads.org/assets/external-link-support.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-88: GET http://scratchpads.org/assets/why/octopus-big.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-90: GET http://scratchpads.org/assets/case-studies/antkey.jpg HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-94: GET http://scratchpads.org/assets/fonts/Ubuntu-Medium.woff HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-93: GET http://scratchpads.org/assets/join/join-read.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-92: GET http://scratchpads.org/assets/join/join-create.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-91: GET http://scratchpads.org/assets/why/fern-square.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-72: in cache, requires validation
-76: not in cache
-73: in cache, requires validation
-76: Requesting GET http://scratchpads.org/assets/join/join-develop.png HTTP/1.1 from scratchpads.org
-64: Received HTTP/1.1 304 Not Modified from scratchpads.org
-64: not cacheable because not 200 OK
-95: GET http://scratchpads.org/assets/sponsor-logos/emonocot.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-64: Responding HTTP/1.1 304 Not Modified
-96: GET http://scratchpads.org/assets/why/flower-square.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-67: Responding HTTP/1.1 200 OK
-97: GET http://scratchpads.org/assets/why/weevil-big.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:07 2021
-66: Received HTTP/1.1 304 Not Modified from scratchpads.org
-66: not cacheable because not 200 OK
-66: Responding HTTP/1.1 304 Not Modified
-83: in cache, requires validation
-89: not in cache
-89: Requesting GET http://scratchpads.org/assets/why/fern-big.png HTTP/1.1 from scratchpads.org
-76: Received HTTP/1.1 304 Not Modified from scratchpads.org
-76: not cacheable because not 200 OK
-76: Responding HTTP/1.1 304 Not Modified
-72: Responding HTTP/1.1 200 OK
-73: Responding HTTP/1.1 200 OK
-83: Responding HTTP/1.1 200 OK
-68: in cache, requires validation
-69: in cache, requires validation
-70: in cache, requires validation
-77: not in cache
-77: Requesting GET http://scratchpads.org/assets/join/join-sandbox.png HTTP/1.1 from scratchpads.org
-89: Received HTTP/1.1 200 OK from scratchpads.org
-89: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
-89: Responding HTTP/1.1 200 OK
+66: Requesting GET http://www.gov.cn/govweb/c15008/202009/5547483/images/39f70c31c87c443b99a2280bccc90cdd.png HTTP/1.1 from www.gov.cn
+66: Received HTTP/1.1 200 OK from www.gov.cn
+66: cached, but requires re-validation
+66: Responding HTTP/1.1 200 OK
+67: GET http://www.gov.cn/govweb/c27581/202103/5590651/images/8a8d75d8670e4328b98979de016dd344.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:38 2021
+68: GET http://www.gov.cn/govweb/c15008/202009/5547480/images/8fbbd7f6b547489093b9c678feed84c7.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:38 2021
+69: GET http://www.gov.cn/govweb/xhtml/2019zhuanti/20200927yshjjxs/images/20201229mobile_gwyzcwdpt.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:38 2021
+70: GET http://www.gov.cn/govweb/c15008/202101/5577650/images/e46ffad827284b9e976529e37b6ce210.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:39 2021
+71: GET http://www.gov.cn/govweb/c15008/202009/5547506/images/023957b854284e338961ccef131c06ab.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:39 2021
+28: not in cache
+28: Requesting GET http://www.gov.cn/govweb/c1296/202103/5591299/images/cd286dc8a2a04e1c9d271c6e367be973.jpg HTTP/1.1 from www.gov.cn
+28: Received HTTP/1.1 200 OK from www.gov.cn
+28: cached, but requires re-validation
+28: Responding HTTP/1.1 200 OK
+68: not in cache
+68: Requesting GET http://www.gov.cn/govweb/c15008/202009/5547480/images/8fbbd7f6b547489093b9c678feed84c7.png HTTP/1.1 from www.gov.cn
+68: Received HTTP/1.1 200 OK from www.gov.cn
+68: cached, but requires re-validation
 68: Responding HTTP/1.1 200 OK
-69: Responding HTTP/1.1 200 OK
+69: not in cache
+69: Requesting GET http://www.gov.cn/govweb/xhtml/2019zhuanti/20200927yshjjxs/images/20201229mobile_gwyzcwdpt.png HTTP/1.1 from www.gov.cn
+72: GET http://www.gov.cn/govweb/c1297/202103/5591596/images/bb4474e381ad4eb1b315df24cdd757d3.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:39 2021
+70: not in cache
+70: Requesting GET http://www.gov.cn/govweb/c15008/202101/5577650/images/e46ffad827284b9e976529e37b6ce210.png HTTP/1.1 from www.gov.cn
+71: not in cache
+71: Requesting GET http://www.gov.cn/govweb/c15008/202009/5547506/images/023957b854284e338961ccef131c06ab.png HTTP/1.1 from www.gov.cn
+70: Received HTTP/1.1 200 OK from www.gov.cn
+70: cached, but requires re-validation
 70: Responding HTTP/1.1 200 OK
-77: Received HTTP/1.1 304 Not Modified from scratchpads.org
-77: not cacheable because not 200 OK
-77: Responding HTTP/1.1 304 Not Modified
-71: in cache, requires validation
-86: not in cache
-86: Requesting GET http://scratchpads.org/assets/fonts/Ubuntu.woff HTTP/1.1 from scratchpads.org
-92: not in cache
-92: Requesting GET http://scratchpads.org/assets/join/join-create.png HTTP/1.1 from scratchpads.org
-92: Received HTTP/1.1 304 Not Modified from scratchpads.org
-92: not cacheable because not 200 OK
-92: Responding HTTP/1.1 304 Not Modified
+69: Received HTTP/1.1 200 OK from www.gov.cn
+71: Received HTTP/1.1 200 OK from www.gov.cn
+71: cached, but requires re-validation
 71: Responding HTTP/1.1 200 OK
-75: not in cache
-75: Requesting GET http://scratchpads.org/assets/case-studies/solanaceae-source.png HTTP/1.1 from scratchpads.org
-86: Received HTTP/1.1 200 OK from scratchpads.org
-86: cached, expires at Mon, 08 Mar 2021 13:43:01 GMT
-86: Responding HTTP/1.1 200 OK
-79: not in cache
-79: Requesting GET http://scratchpads.org/assets/logo/logo-home.png HTTP/1.1 from scratchpads.org
-80: not in cache
-81: not in cache
-81: Requesting GET http://scratchpads.org/assets/join/join-ambassador.png HTTP/1.1 from scratchpads.org
-80: Requesting GET http://scratchpads.org/assets/join/join-training.png HTTP/1.1 from scratchpads.org
-75: Received HTTP/1.1 304 Not Modified from scratchpads.org
-75: not cacheable because not 200 OK
-75: Responding HTTP/1.1 304 Not Modified
-93: not in cache
-93: Requesting GET http://scratchpads.org/assets/join/join-read.png HTTP/1.1 from scratchpads.org
-79: Received HTTP/1.1 304 Not Modified from scratchpads.org
-79: not cacheable because not 200 OK
-79: Responding HTTP/1.1 304 Not Modified
-81: Received HTTP/1.1 304 Not Modified from scratchpads.org
-81: not cacheable because not 200 OK
-81: Responding HTTP/1.1 304 Not Modified
-80: Received HTTP/1.1 304 Not Modified from scratchpads.org
-80: not cacheable because not 200 OK
-80: Responding HTTP/1.1 304 Not Modified
-93: Received HTTP/1.1 304 Not Modified from scratchpads.org
-93: not cacheable because not 200 OK
-93: Responding HTTP/1.1 304 Not Modified
-74: in cache, requires validation
-87: in cache, requires validation
-84: not in cache
-84: Requesting GET http://scratchpads.org/assets/external-link-develop.png HTTP/1.1 from scratchpads.org
+69: cached, but requires re-validation
+69: Responding HTTP/1.1 200 OK
+73: CONNECT user.www.gov.cn:443 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:39 2021
+74: GET http://recv-wd.gridsumdissector.com/gs.gif?gsver=3.5.0.1&gscmd=spv&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15222299tq61m524&pvid=1522229968bxm624&gsltime=1615251099601&gstmzone=8&rd=y4z47&gsfir=1&gstl=%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%BD%91_%E4%B8%AD%E5%A4%AE%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&gsce=1&gsclr=24&gsje=0&gsst=0&gswh=778&gsph=3029&gspw=1340&gsscr=1424*879&dedupid=15222299s1plz524&gsurl=http%3A%2F%2Fwww.gov.cn%2F&gsorurl=http%3A%2F%2Fwww.gov.cn%2F HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:39 2021
+75: GET http://recv.egovsum.com/gs.gif?gsver=3.5.0.1&gscmd=spv&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15222299tq61m524&pvid=1522229968bxm624&gsltime=1615251099601&gstmzone=8&rd=xqqzu&gsfir=1&gstl=%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%BD%91_%E4%B8%AD%E5%A4%AE%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&gsce=1&gsclr=24&gsje=0&gsst=0&gswh=778&gsph=3029&gspw=1340&gsscr=1424*879&dedupid=15222299s1plz524&gsurl=http%3A%2F%2Fwww.gov.cn%2F&gsorurl=http%3A%2F%2Fwww.gov.cn%2F HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:39 2021
+72: not in cache
+72: Requesting GET http://www.gov.cn/govweb/c1297/202103/5591596/images/bb4474e381ad4eb1b315df24cdd757d3.jpg HTTP/1.1 from www.gov.cn
+76: GET http://recv-bak-wd.gridsumdissector.com/gs.gif?gsver=3.5.0.1&gscmd=spv&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15222299tq61m524&pvid=1522229968bxm624&gsltime=1615251099601&gstmzone=8&rd=r1zrh&gsfir=1&gstl=%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%BD%91_%E4%B8%AD%E5%A4%AE%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&gsce=1&gsclr=24&gsje=0&gsst=0&gswh=778&gsph=3029&gspw=1340&gsscr=1424*879&dedupid=15222299s1plz524&gsurl=http%3A%2F%2Fwww.gov.cn%2F&gsorurl=http%3A%2F%2Fwww.gov.cn%2F HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:39 2021
+72: Received HTTP/1.1 200 OK from www.gov.cn
+72: cached, but requires re-validation
+72: Responding HTTP/1.1 200 OK
+77: GET http://stat.www.gov.cn/webdig.js?z=1 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:39 2021
+74: not in cache
+74: Requesting GET http://recv-wd.gridsumdissector.com/gs.gif?gsver=3.5.0.1&gscmd=spv&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15222299tq61m524&pvid=1522229968bxm624&gsltime=1615251099601&gstmzone=8&rd=y4z47&gsfir=1&gstl=%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%BD%91_%E4%B8%AD%E5%A4%AE%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&gsce=1&gsclr=24&gsje=0&gsst=0&gswh=778&gsph=3029&gspw=1340&gsscr=1424*879&dedupid=15222299s1plz524&gsurl=http%3A%2F%2Fwww.gov.cn%2F&gsorurl=http%3A%2F%2Fwww.gov.cn%2F HTTP/1.1 from recv-wd.gridsumdissector.com
+76: not in cache
+76: Requesting GET http://recv-bak-wd.gridsumdissector.com/gs.gif?gsver=3.5.0.1&gscmd=spv&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15222299tq61m524&pvid=1522229968bxm624&gsltime=1615251099601&gstmzone=8&rd=r1zrh&gsfir=1&gstl=%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%BD%91_%E4%B8%AD%E5%A4%AE%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&gsce=1&gsclr=24&gsje=0&gsst=0&gswh=778&gsph=3029&gspw=1340&gsscr=1424*879&dedupid=15222299s1plz524&gsurl=http%3A%2F%2Fwww.gov.cn%2F&gsorurl=http%3A%2F%2Fwww.gov.cn%2F HTTP/1.1 from recv-bak-wd.gridsumdissector.com
+74: Received HTTP/1.1 200 OK from recv-wd.gridsumdissector.com
+74: cached, but requires re-validation
 74: Responding HTTP/1.1 200 OK
-87: Responding HTTP/1.1 200 OK
-84: Received HTTP/1.1 200 OK from scratchpads.org
-84: cached, expires at Mon, 08 Mar 2021 10:15:58 GMT
+76: Received HTTP/1.1 200 OK from recv-bak-wd.gridsumdissector.com
+76: cached, but requires re-validation
+76: Responding HTTP/1.1 200 OK
+75: not in cache
+75: Requesting GET http://recv.egovsum.com/gs.gif?gsver=3.5.0.1&gscmd=spv&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15222299tq61m524&pvid=1522229968bxm624&gsltime=1615251099601&gstmzone=8&rd=xqqzu&gsfir=1&gstl=%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%BD%91_%E4%B8%AD%E5%A4%AE%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&gsce=1&gsclr=24&gsje=0&gsst=0&gswh=778&gsph=3029&gspw=1340&gsscr=1424*879&dedupid=15222299s1plz524&gsurl=http%3A%2F%2Fwww.gov.cn%2F&gsorurl=http%3A%2F%2Fwww.gov.cn%2F HTTP/1.1 from recv.egovsum.com
+75: Received HTTP/1.1 200 OK from recv.egovsum.com
+75: cached, but requires re-validation
+75: Responding HTTP/1.1 200 OK
+77: not in cache
+77: Requesting GET http://stat.www.gov.cn/webdig.js?z=1 HTTP/1.1 from stat.www.gov.cn
+78: GET http://www.gov.cn/govweb/xhtml/govwfcss/govweb/c1292h/5591600_FZZHUNYSK_1615216953649/govwf_fzzhunysk_ys_3168696356.woff HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:40 2021
+77: Received HTTP/1.1 200 OK from stat.www.gov.cn
+77: cached, but requires re-validation
+77: Responding HTTP/1.1 200 OK
+78: not in cache
+78: Requesting GET http://www.gov.cn/govweb/xhtml/govwfcss/govweb/c1292h/5591600_FZZHUNYSK_1615216953649/govwf_fzzhunysk_ys_3168696356.woff HTTP/1.1 from www.gov.cn
+78: Received HTTP/1.1 200 OK from www.gov.cn
+78: cached, but requires re-validation
+78: Responding HTTP/1.1 200 OK
+79: GET http://stat.www.gov.cn/1.gif?z=1&a=17812c060f1&b=%u4E2D%u56FD%u653F%u5E9C%u7F51_%u4E2D%u592E%u4EBA%u6C11%u653F%u5E9C%u95E8%u6237%u7F51%u7AD9&B=UTF-8&c=http%3A//www.gov.cn/%3F_wdxid%3D000000000000000000000000000000000000000000%26_wdc%3D2016govs%26_wdt%3D012%26&d=&e=10&f=49b0077f431731e8&H=www.gov.cn&E=0&r=2d41a1f61887c2ad&s=0&t=0&u=1&i=en-US&j=0&k=1424x879&l=24&m=&n=&o=8 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:41 2021
+80: CONNECT www.gov.cn:443 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:41 2021
+73: Responding "HTTP/1.1 200 OK"
+80: Responding "HTTP/1.1 200 OK"
+81: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:41 2021
+79: not in cache
+79: Requesting GET http://stat.www.gov.cn/1.gif?z=1&a=17812c060f1&b=%u4E2D%u56FD%u653F%u5E9C%u7F51_%u4E2D%u592E%u4EBA%u6C11%u653F%u5E9C%u95E8%u6237%u7F51%u7AD9&B=UTF-8&c=http%3A//www.gov.cn/%3F_wdxid%3D000000000000000000000000000000000000000000%26_wdc%3D2016govs%26_wdt%3D012%26&d=&e=10&f=49b0077f431731e8&H=www.gov.cn&E=0&r=2d41a1f61887c2ad&s=0&t=0&u=1&i=en-US&j=0&k=1424x879&l=24&m=&n=&o=8 HTTP/1.1 from stat.www.gov.cn
+79: Received HTTP/1.1 200 OK from stat.www.gov.cn
+79: not cacheable because Cache-control: private
+79: Responding HTTP/1.1 200 OK
+82: GET http://search.www.gov.cn/search/search/plugin/wordranklist.do?size=3&webid=1&callback=jQuery18307257517991887665_1615222291305&_=1615222301635 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:41 2021
+83: GET http://www.gov.cn/govweb/xhtml/2016gov/images/index/banner_li1.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:41 2021
+84: GET http://www.gov.cn/govweb/xhtml/2016gov/images/index/banner_li2.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:41 2021
+85: GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/index_btn01.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:41 2021
+86: GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/index_btn02.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:41 2021
+87: GET http://www.gov.cn/govweb/xhtml/2016gov/guowuyuan/20190301gwykhd/images/icon_1234.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:41 2021
+88: GET http://www.gov.cn/govweb/xhtml/2016gov/guowuyuan/20190301gwykhd/images/icon_724.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:42 2021
+83: not in cache
+83: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/images/index/banner_li1.jpg HTTP/1.1 from www.gov.cn
+84: not in cache
+84: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/images/index/banner_li2.jpg HTTP/1.1 from www.gov.cn
+89: GET http://dcs.conac.cn/js/33/000/0000/40672163/CA330000000406721630004.js HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:42 2021
+83: Received HTTP/1.1 200 OK from www.gov.cn
+83: cached, but requires re-validation
+83: Responding HTTP/1.1 200 OK
+85: not in cache
+85: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/index_btn01.png HTTP/1.1 from www.gov.cn
+86: not in cache
+86: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/index_btn02.png HTTP/1.1 from www.gov.cn
+84: Received HTTP/1.1 200 OK from www.gov.cn
+84: cached, but requires re-validation
 84: Responding HTTP/1.1 200 OK
-98: CONNECT platform.twitter.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:35:13 2021
-82: not in cache
-82: Requesting GET http://scratchpads.org/assets/why/octopus-square.png HTTP/1.1 from scratchpads.org
-85: in cache, requires validation
-95: not in cache
-95: Requesting GET http://scratchpads.org/assets/sponsor-logos/emonocot.png HTTP/1.1 from scratchpads.org
-96: in cache, requires validation
-97: in cache, requires validation
+85: Received HTTP/1.1 200 OK from www.gov.cn
+85: cached, but requires re-validation
 85: Responding HTTP/1.1 200 OK
-95: Received HTTP/1.1 200 OK from scratchpads.org
-95: cached, expires at Mon, 08 Mar 2021 08:02:01 GMT
-95: Responding HTTP/1.1 200 OK
-96: Responding HTTP/1.1 200 OK
-97: Responding HTTP/1.1 200 OK
-82: Received HTTP/1.1 200 OK from scratchpads.org
-82: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
+86: Received HTTP/1.1 200 OK from www.gov.cn
+86: cached, but requires re-validation
+86: Responding HTTP/1.1 200 OK
+87: not in cache
+87: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/guowuyuan/20190301gwykhd/images/icon_1234.png HTTP/1.1 from www.gov.cn
+87: Received HTTP/1.1 200 OK from www.gov.cn
+87: cached, but requires re-validation
+87: Responding HTTP/1.1 200 OK
+88: not in cache
+88: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/guowuyuan/20190301gwykhd/images/icon_724.png HTTP/1.1 from www.gov.cn
+88: Received HTTP/1.1 200 OK from www.gov.cn
+88: cached, but requires re-validation
+88: Responding HTTP/1.1 200 OK
+90: GET http://www.gov.cn/govweb/xhtml/2016gov/js/jquery-1.8.3.min.js HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:42 2021
+89: not in cache
+89: Requesting GET http://dcs.conac.cn/js/33/000/0000/40672163/CA330000000406721630004.js HTTP/1.1 from dcs.conac.cn
+89: Received HTTP/1.1 200 OK from dcs.conac.cn
+89: cached, but requires re-validation
+89: Responding HTTP/1.1 200 OK
+82: not in cache
+82: Requesting GET http://search.www.gov.cn/search/search/plugin/wordranklist.do?size=3&webid=1&callback=jQuery18307257517991887665_1615222291305&_=1615222301635 HTTP/1.1 from search.www.gov.cn
+91: GET http://www.gov.cn/govweb/xhtml/2016gov/images/index/2018guohui03.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:42 2021
+92: GET http://dcs.conac.cn/image/red.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:42 2021
+93: GET http://www.gov.cn/govweb/xhtml/2016gov/guowuyuan/20190301gwykhd/images/icon_1534.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:42 2021
+82: Received HTTP/1.1 200 OK from search.www.gov.cn
+82: cached, but requires re-validation
 82: Responding HTTP/1.1 200 OK
 90: not in cache
-90: Requesting GET http://scratchpads.org/assets/case-studies/antkey.jpg HTTP/1.1 from scratchpads.org
-88: not in cache
-88: Requesting GET http://scratchpads.org/assets/why/octopus-big.png HTTP/1.1 from scratchpads.org
-90: Received HTTP/1.1 304 Not Modified from scratchpads.org
-90: not cacheable because not 200 OK
-90: Responding HTTP/1.1 304 Not Modified
-88: Received HTTP/1.1 304 Not Modified from scratchpads.org
-88: not cacheable because not 200 OK
-88: Responding HTTP/1.1 304 Not Modified
+90: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/js/jquery-1.8.3.min.js HTTP/1.1 from www.gov.cn
+90: Received HTTP/1.1 200 OK from www.gov.cn
+90: cached, but requires re-validation
+90: Responding HTTP/1.1 200 OK
+94: GET http://www.gov.cn/govweb/xhtml/2016gov/guowuyuan/20190301gwykhd/images/icon_1434.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:42 2021
+95: GET http://recv-wd.gridsumdissector.com/gs.gif?gsver=3.5.0.1&gscmd=spv&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15196306mu17ei24&pvid=151963066wt73124&gsltime=1615225106656&gstmzone=8&gsdelay=25995375&rd=f74ba&gsfir=1&gstl=%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%BD%91_%E4%B8%AD%E5%A4%AE%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&gsce=1&gsclr=24&gsje=0&gsst=0&gswh=778&gsph=3029&gspw=1340&gsscr=1424*879&dedupid=15196306jqub8d24&gsurl=http%3A%2F%2Fwww.gov.cn%2F&gsorurl=http%3A%2F%2Fwww.gov.cn%2F HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:42 2021
+91: not in cache
+91: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/images/index/2018guohui03.png HTTP/1.1 from www.gov.cn
+91: Received HTTP/1.1 200 OK from www.gov.cn
+91: cached, but requires re-validation
+91: Responding HTTP/1.1 200 OK
+96: GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/select_jiantou.jpg HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:42 2021
+93: not in cache
+93: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/guowuyuan/20190301gwykhd/images/icon_1534.png HTTP/1.1 from www.gov.cn
+92: not in cache
+92: Requesting GET http://dcs.conac.cn/image/red.png HTTP/1.1 from dcs.conac.cn
+93: Received HTTP/1.1 200 OK from www.gov.cn
+93: cached, but requires re-validation
+93: Responding HTTP/1.1 200 OK
+92: Received HTTP/1.1 200 OK from dcs.conac.cn
+92: cached, but requires re-validation
+92: Responding HTTP/1.1 200 OK
+67: not in cache
+67: Requesting GET http://www.gov.cn/govweb/c27581/202103/5590651/images/8a8d75d8670e4328b98979de016dd344.jpg HTTP/1.1 from www.gov.cn
+67: Received HTTP/1.1 200 OK from www.gov.cn
+67: cached, but requires re-validation
+67: Responding HTTP/1.1 200 OK
 94: not in cache
-94: Requesting GET http://scratchpads.org/assets/fonts/Ubuntu-Medium.woff HTTP/1.1 from scratchpads.org
-94: Received HTTP/1.1 304 Not Modified from scratchpads.org
-94: not cacheable because not 200 OK
-94: Responding HTTP/1.1 304 Not Modified
-32: Connection closed
-6: Error: cannot connect to socket
-(platform.twitter.com,443) 
-26: Error: cannot connect to socket
-(maps.google.com,80) 
-58: Connection closed
-99: CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:14 2021
-99: Responding "HTTP/1.1 200 OK"
-100: GET http://scratchpads.org/ HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:15 2021
+94: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/guowuyuan/20190301gwykhd/images/icon_1434.png HTTP/1.1 from www.gov.cn
+95: not in cache
+95: Requesting GET http://recv-wd.gridsumdissector.com/gs.gif?gsver=3.5.0.1&gscmd=spv&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15196306mu17ei24&pvid=151963066wt73124&gsltime=1615225106656&gstmzone=8&gsdelay=25995375&rd=f74ba&gsfir=1&gstl=%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%BD%91_%E4%B8%AD%E5%A4%AE%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&gsce=1&gsclr=24&gsje=0&gsst=0&gswh=778&gsph=3029&gspw=1340&gsscr=1424*879&dedupid=15196306jqub8d24&gsurl=http%3A%2F%2Fwww.gov.cn%2F&gsorurl=http%3A%2F%2Fwww.gov.cn%2F HTTP/1.1 from recv-wd.gridsumdissector.com
+94: Received HTTP/1.1 200 OK from www.gov.cn
+94: cached, but requires re-validation
+94: Responding HTTP/1.1 200 OK
+95: Received HTTP/1.1 200 OK from recv-wd.gridsumdissector.com
+95: cached, but requires re-validation
+95: Responding HTTP/1.1 200 OK
+96: not in cache
+96: Requesting GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/select_jiantou.jpg HTTP/1.1 from www.gov.cn
+96: Received HTTP/1.1 200 OK from www.gov.cn
+96: cached, but requires re-validation
+96: Responding HTTP/1.1 200 OK
+97: GET http://cloudfront-labs.amazonaws.com/x.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:43 2021
+98: CONNECT certify.alexametrics.com:443 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:43 2021
+100: GET http://recv-wd.gridsumdissector.com/gs.gif?gsver=3.5.0.1&gscmd=spv&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15197461f7gfs424&pvid=151974611vs4k224&gsltime=1615226261509&gstmzone=8&gsdelay=24842583&rd=dqeuh&gsfir=1&gstl=%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%BD%91_%E4%B8%AD%E5%A4%AE%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&gsce=1&gsclr=24&gsje=0&gsst=0&gswh=778&gsph=3029&gspw=1340&gsscr=1424*879&dedupid=15197461h464wf24&gsurl=http%3A%2F%2Fwww.gov.cn%2F&gsorurl=http%3A%2F%2Fwww.gov.cn%2F HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:44 2021
+97: not in cache
+97: Requesting GET http://cloudfront-labs.amazonaws.com/x.png HTTP/1.1 from cloudfront-labs.amazonaws.com
+98: Responding "HTTP/1.1 200 OK"
+97: Received HTTP/1.1 301 Moved Permanently from cloudfront-labs.amazonaws.com
+97: not cacheable because not 200 OK
+97: Responding HTTP/1.1 301 Moved Permanently
+101: GET http://redirect.prod.experiment.routing.cloudfront.aws.a2z.com/x.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:44 2021
 100: not in cache
-100: Requesting GET http://scratchpads.org/ HTTP/1.1 from scratchpads.org
-100: Received HTTP/1.1 200 OK from scratchpads.org
-100: cached, expires at Mon, 08 Mar 2021 15:53:04 GMT
+100: Requesting GET http://recv-wd.gridsumdissector.com/gs.gif?gsver=3.5.0.1&gscmd=spv&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15197461f7gfs424&pvid=151974611vs4k224&gsltime=1615226261509&gstmzone=8&gsdelay=24842583&rd=dqeuh&gsfir=1&gstl=%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%BD%91_%E4%B8%AD%E5%A4%AE%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&gsce=1&gsclr=24&gsje=0&gsst=0&gswh=778&gsph=3029&gspw=1340&gsscr=1424*879&dedupid=15197461h464wf24&gsurl=http%3A%2F%2Fwww.gov.cn%2F&gsorurl=http%3A%2F%2Fwww.gov.cn%2F HTTP/1.1 from recv-wd.gridsumdissector.com
+100: Received HTTP/1.1 200 OK from recv-wd.gridsumdissector.com
+100: cached, but requires re-validation
 100: Responding HTTP/1.1 200 OK
-101: GET http://scratchpads.org/assets/why/accordion.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:17 2021
-103: GET http://scratchpads.org/css/index.css HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:17 2021
-102: GET http://scratchpads.org/assets/index.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:17 2021
 101: not in cache
-101: Requesting GET http://scratchpads.org/assets/why/accordion.js HTTP/1.1 from scratchpads.org
-101: Received HTTP/1.1 304 Not Modified from scratchpads.org
+101: Requesting GET http://redirect.prod.experiment.routing.cloudfront.aws.a2z.com/x.png HTTP/1.1 from redirect.prod.experiment.routing.cloudfront.aws.a2z.com
+101: Received HTTP/1.1 302 Found from redirect.prod.experiment.routing.cloudfront.aws.a2z.com
 101: not cacheable because not 200 OK
-101: Responding HTTP/1.1 304 Not Modified
+101: Responding HTTP/1.1 302 Found
+102: GET http://a159c25296ea8ad09c2cae24f7b946ea6.profile.hel50-c2.cloudfront.net/test.png HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:45 2021
 102: not in cache
-102: Requesting GET http://scratchpads.org/assets/index.js HTTP/1.1 from scratchpads.org
-103: not in cache
-103: Requesting GET http://scratchpads.org/css/index.css HTTP/1.1 from scratchpads.org
-102: Received HTTP/1.1 304 Not Modified from scratchpads.org
-102: not cacheable because not 200 OK
-102: Responding HTTP/1.1 304 Not Modified
-103: Received HTTP/1.1 200 OK from scratchpads.org
-103: cached, expires at Mon, 08 Mar 2021 16:09:17 GMT
-103: Responding HTTP/1.1 200 OK
-104: GET http://scratchpads.org/assets/join/join-training.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-106: GET http://scratchpads.org/assets/logo/logo-home.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-107: GET http://scratchpads.org/assets/join/join-develop.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-105: GET http://scratchpads.org/assets/join/join-sandbox.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-108: GET http://scratchpads.org/assets/case-studies/solanaceae-source.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-110: GET http://scratchpads.org/assets/case-studies/dest.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-109: GET http://scratchpads.org/assets/join/join-ambassador.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-111: GET http://scratchpads.org/assets/index/twitter.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-115: GET http://scratchpads.org/assets/case-studies/sampled-red-list.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-114: GET http://scratchpads.org/assets/sponsor-logos/ner.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-113: GET http://scratchpads.org/assets/sponsor-logos/emonocot.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-112: GET http://scratchpads.org/assets/fonts/Ubuntu-Medium.woff HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-109: not in cache
-109: Requesting GET http://scratchpads.org/assets/join/join-ambassador.png HTTP/1.1 from scratchpads.org
-116: GET http://scratchpads.org/assets/why/fern-square.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-117: GET http://scratchpads.org/assets/case-studies/african-ichthyology.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:19 2021
-126: GET http://scratchpads.org/assets/case-studies/antkey.jpg HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-119: GET http://scratchpads.org/assets/external-link-support.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-124: GET http://scratchpads.org/assets/index/feed-icon.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-125: GET http://scratchpads.org/assets/sponsor-logos/vibrant.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-118: GET http://scratchpads.org/assets/external-link-develop.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-121: GET http://scratchpads.org/assets/why/octopus-square.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-120: GET http://scratchpads.org/assets/fonts/Ubuntu.woff HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-109: Received HTTP/1.1 304 Not Modified from scratchpads.org
-109: not cacheable because not 200 OK
-122: GET http://scratchpads.org/assets/why/fern-big.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-127: GET http://scratchpads.org/assets/why/octopus-big.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-123: GET http://scratchpads.org/assets/why/flower-square.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-115: in cache, requires validation
-128: GET http://scratchpads.org/assets/sponsor-logos/einfra.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-109: Responding HTTP/1.1 304 Not Modified
-130: GET http://scratchpads.org/assets/why/weevil-square.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-129: GET http://scratchpads.org/assets/sponsor-logos/nhm.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-131: GET http://scratchpads.org/assets/why/weevil-big.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-132: GET http://scratchpads.org/assets/why/flower-big.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-133: GET http://scratchpads.org/assets/join/join-read.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-118: in cache, requires validation
-124: in cache, requires validation
-123: in cache, requires validation
-115: Responding HTTP/1.1 200 OK
-134: GET http://scratchpads.org/assets/join/join-create.png HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-118: Responding HTTP/1.1 200 OK
-135: GET http://maps.google.com/maps/ms?msa=0&msid=207476008910733911886.0004aa0d615ad69652070&ie=UTF8&t=m&vpsrc=6&source=embed&ll=26.431228,29.53125&spn=150.379743,298.828125&z=1&output=embed HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:20 2021
-124: Responding HTTP/1.1 200 OK
-104: not in cache
-104: Requesting GET http://scratchpads.org/assets/join/join-training.png HTTP/1.1 from scratchpads.org
-123: Responding HTTP/1.1 200 OK
-111: not in cache
-111: Requesting GET http://scratchpads.org/assets/index/twitter.png HTTP/1.1 from scratchpads.org
-108: not in cache
-108: Requesting GET http://scratchpads.org/assets/case-studies/solanaceae-source.png HTTP/1.1 from scratchpads.org
-104: Received HTTP/1.1 304 Not Modified from scratchpads.org
-104: not cacheable because not 200 OK
-112: not in cache
-112: Requesting GET http://scratchpads.org/assets/fonts/Ubuntu-Medium.woff HTTP/1.1 from scratchpads.org
-104: Responding HTTP/1.1 304 Not Modified
-111: Received HTTP/1.1 200 OK from scratchpads.org
-111: cached, expires at Mon, 08 Mar 2021 16:09:18 GMT
-111: Responding HTTP/1.1 200 OK
-108: Received HTTP/1.1 304 Not Modified from scratchpads.org
-108: not cacheable because not 200 OK
-108: Responding HTTP/1.1 304 Not Modified
-116: not in cache
-116: Requesting GET http://scratchpads.org/assets/why/fern-square.png HTTP/1.1 from scratchpads.org
-106: not in cache
-106: Requesting GET http://scratchpads.org/assets/logo/logo-home.png HTTP/1.1 from scratchpads.org
+102: Requesting GET http://a159c25296ea8ad09c2cae24f7b946ea6.profile.hel50-c2.cloudfront.net/test.png HTTP/1.1 from a159c25296ea8ad09c2cae24f7b946ea6.profile.hel50-c2.cloudfront.net
+102: Received HTTP/1.1 200 OK from a159c25296ea8ad09c2cae24f7b946ea6.profile.hel50-c2.cloudfront.net
+102: cached, expires at Mon, 08 Mar 2021 16:51:46 GMT
+102: Responding HTTP/1.1 200 OK
+103: GET http://recv-wd.gridsumdissector.com/gs.gif?gsver=3.5.0.1&gscmd=hb&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15222299tq61m524&pvid=1522229968bxm624&gsltime=1615251107243&gstmzone=8&rd=t4xt2&pld=7&gsst=721&gswh=778 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:47 2021
+104: GET http://recv.egovsum.com/gs.gif?gsver=3.5.0.1&gscmd=hb&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15222299tq61m524&pvid=1522229968bxm624&gsltime=1615251107243&gstmzone=8&rd=3l2ob&pld=7&gsst=721&gswh=778 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:47 2021
+105: GET http://recv-bak-wd.gridsumdissector.com/gs.gif?gsver=3.5.0.1&gscmd=hb&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15222299tq61m524&pvid=1522229968bxm624&gsltime=1615251107243&gstmzone=8&rd=v1jq4&pld=7&gsst=721&gswh=778 HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:47 2021
 105: not in cache
-105: Requesting GET http://scratchpads.org/assets/join/join-sandbox.png HTTP/1.1 from scratchpads.org
-129: in cache, requires validation
-105: Received HTTP/1.1 304 Not Modified from scratchpads.org
-105: not cacheable because not 200 OK
-105: Responding HTTP/1.1 304 Not Modified
-106: Received HTTP/1.1 304 Not Modified from scratchpads.org
-106: not cacheable because not 200 OK
-106: Responding HTTP/1.1 304 Not Modified
-116: Received HTTP/1.1 304 Not Modified from scratchpads.org
-116: not cacheable because not 200 OK
-116: Responding HTTP/1.1 304 Not Modified
-120: in cache, requires validation
-112: Received HTTP/1.1 200 OK from scratchpads.org
-112: cached, expires at Mon, 08 Mar 2021 13:43:01 GMT
-112: Responding HTTP/1.1 200 OK
-129: Responding HTTP/1.1 200 OK
-134: not in cache
-134: Requesting GET http://scratchpads.org/assets/join/join-create.png HTTP/1.1 from scratchpads.org
-120: Responding HTTP/1.1 200 OK
-113: in cache, requires validation
-134: Received HTTP/1.1 304 Not Modified from scratchpads.org
-134: not cacheable because not 200 OK
-134: Responding HTTP/1.1 304 Not Modified
-114: in cache, requires validation
-126: not in cache
-126: Requesting GET http://scratchpads.org/assets/case-studies/antkey.jpg HTTP/1.1 from scratchpads.org
-113: Responding HTTP/1.1 200 OK
-130: in cache, requires validation
-114: Responding HTTP/1.1 200 OK
-126: Received HTTP/1.1 304 Not Modified from scratchpads.org
-126: not cacheable because not 200 OK
-126: Responding HTTP/1.1 304 Not Modified
-127: not in cache
-127: Requesting GET http://scratchpads.org/assets/why/octopus-big.png HTTP/1.1 from scratchpads.org
-121: in cache, requires validation
-130: Responding HTTP/1.1 200 OK
-131: in cache, requires validation
-127: Received HTTP/1.1 304 Not Modified from scratchpads.org
-127: not cacheable because not 200 OK
-127: Responding HTTP/1.1 304 Not Modified
-121: Responding HTTP/1.1 200 OK
-122: in cache, requires validation
-131: Responding HTTP/1.1 200 OK
-132: in cache, requires validation
-133: not in cache
-133: Requesting GET http://scratchpads.org/assets/join/join-read.png HTTP/1.1 from scratchpads.org
-122: Responding HTTP/1.1 200 OK
-132: Responding HTTP/1.1 200 OK
-133: Received HTTP/1.1 304 Not Modified from scratchpads.org
-133: not cacheable because not 200 OK
-133: Responding HTTP/1.1 304 Not Modified
-128: not in cache
-128: Requesting GET http://scratchpads.org/assets/sponsor-logos/einfra.png HTTP/1.1 from scratchpads.org
-78: Error: cannot connect to socket
-(maps.google.com,80) 
-128: Received HTTP/1.1 200 OK from scratchpads.org
-128: cached, expires at Mon, 08 Mar 2021 08:02:01 GMT
-128: Responding HTTP/1.1 200 OK
-91: Error: cannot connect to socket
-(scratchpads.org,80) 
-107: not in cache
-107: Requesting GET http://scratchpads.org/assets/join/join-develop.png HTTP/1.1 from scratchpads.org
-107: Received HTTP/1.1 304 Not Modified from scratchpads.org
-107: not cacheable because not 200 OK
-107: Responding HTTP/1.1 304 Not Modified
-136: CONNECT platform.twitter.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 16:36:24 2021
-119: in cache, requires validation
-125: not in cache
-125: Requesting GET http://scratchpads.org/assets/sponsor-logos/vibrant.png HTTP/1.1 from scratchpads.org
-125: Received HTTP/1.1 200 OK from scratchpads.org
-125: cached, expires at Mon, 08 Mar 2021 09:03:23 GMT
-125: Responding HTTP/1.1 200 OK
-119: Responding HTTP/1.1 200 OK
-117: not in cache
-117: Requesting GET http://scratchpads.org/assets/case-studies/african-ichthyology.png HTTP/1.1 from scratchpads.org
-117: Received HTTP/1.1 304 Not Modified from scratchpads.org
-117: not cacheable because not 200 OK
-117: Responding HTTP/1.1 304 Not Modified
-136: Responding "HTTP/1.1 200 OK"
-136: Connection closed
-98: Error: cannot connect to socket
-(platform.twitter.com,443) 
-110: not in cache
-110: Requesting GET http://scratchpads.org/assets/case-studies/dest.png HTTP/1.1 from scratchpads.org
-110: Received HTTP/1.1 304 Not Modified from scratchpads.org
-110: not cacheable because not 200 OK
-110: Responding HTTP/1.1 304 Not Modified
-99: Connection closed
+103: not in cache
+105: Requesting GET http://recv-bak-wd.gridsumdissector.com/gs.gif?gsver=3.5.0.1&gscmd=hb&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15222299tq61m524&pvid=1522229968bxm624&gsltime=1615251107243&gstmzone=8&rd=v1jq4&pld=7&gsst=721&gswh=778 HTTP/1.1 from recv-bak-wd.gridsumdissector.com
+103: Requesting GET http://recv-wd.gridsumdissector.com/gs.gif?gsver=3.5.0.1&gscmd=hb&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15222299tq61m524&pvid=1522229968bxm624&gsltime=1615251107243&gstmzone=8&rd=t4xt2&pld=7&gsst=721&gswh=778 HTTP/1.1 from recv-wd.gridsumdissector.com
+103: Received HTTP/1.1 200 OK from recv-wd.gridsumdissector.com
+103: cached, but requires re-validation
+103: Responding HTTP/1.1 200 OK
+105: Received HTTP/1.1 200 OK from recv-bak-wd.gridsumdissector.com
+105: cached, but requires re-validation
+105: Responding HTTP/1.1 200 OK
+12: Connection closed
+9: Connection closed
+6: Connection closed
+10: Connection closed
+98: Connection closed
+73: Connection closed
+80: Connection closed
+99: WARNING invalid request from 172.18.0.1 @ Mon Mar  8 16:51:48 2021
+104: not in cache
+104: Requesting GET http://recv.egovsum.com/gs.gif?gsver=3.5.0.1&gscmd=hb&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15222299tq61m524&pvid=1522229968bxm624&gsltime=1615251107243&gstmzone=8&rd=3l2ob&pld=7&gsst=721&gswh=778 HTTP/1.1 from recv.egovsum.com
+104: Received HTTP/1.1 200 OK from recv.egovsum.com
+104: cached, but requires re-validation
+104: Responding HTTP/1.1 200 OK
