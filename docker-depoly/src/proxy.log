@@ -1,46 +1,44 @@
-1: CONNECT www.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:13 2021
-1: Responding "HTTP/1.1 200 OK"
-2: CONNECT m.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:15 2021
+1: GET http://detectportal.firefox.com/success.txt HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:37:23 2021
+2: CONNECT content-signature-2.cdn.mozilla.net:443 HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:37:23 2021
 2: Responding "HTTP/1.1 200 OK"
-3: CONNECT misc.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:15 2021
-4: CONNECT wl.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:15 2021
-3: Responding "HTTP/1.1 200 OK"
-4: Responding "HTTP/1.1 200 OK"
-1: Connection closed
-5: CONNECT mercury.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-5: Responding "HTTP/1.1 200 OK"
-7: CONNECT floor.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-6: CONNECT passport.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-8: CONNECT api.m.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-7: Responding "HTTP/1.1 200 OK"
+2: Connection closed
+3: GET http://detectportal.firefox.com/success.txt HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:37:31 2021
+4: GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:37:35 2021
+5: GET http://detectportal.firefox.com/success.txt?ipv6 HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:37:36 2021
+6: CONNECT safebrowsing.googleapis.com:443 HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:37:37 2021
 6: Responding "HTTP/1.1 200 OK"
-8: Responding "HTTP/1.1 200 OK"
-9: CONNECT passport.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-9: Responding "HTTP/1.1 200 OK"
+7: POST http://ocsp.pki.goog/gts1o1core HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:37:38 2021
 6: Connection closed
-10: CONNECT img1.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-9: Connection closed
-10: Responding "HTTP/1.1 200 OK"
-11: CONNECT fd.3.cn:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-14: CONNECT img30.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-13: CONNECT img11.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-12: CONNECT img20.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-15: CONNECT img10.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-16: CONNECT lapi.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-11: Responding "HTTP/1.1 200 OK"
-14: Responding "HTTP/1.1 200 OK"
+8: WARNING invalid request from 172.19.0.1 @ Mon Mar  8 09:37:49 2021
+9: GET http://ysp.www.gov.cn/013582404bd78ad3c016b8fffefe6a9a/allmobilize.min.js HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:11 2021
+11: GET http://static.gridsumdissector.com/js/Clients/GWD-801026-069B76/gs.js HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:16 2021
+10: GET http://www.gov.cn/govweb/xhtml/govwfcss/govweb/c1292h/5591489_FZZHUNYSK_1615192374518/govwf_fzzhunysk_ys_3168696356.css?timer=1615192375226 HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:16 2021
+12: CONNECT www.microsoft.com:443 HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:17 2021
 12: Responding "HTTP/1.1 200 OK"
+13: CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:18 2021
 13: Responding "HTTP/1.1 200 OK"
-16: Responding "HTTP/1.1 200 OK"
+14: CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:19 2021
+14: Responding "HTTP/1.1 200 OK"
+15: CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:22 2021
 15: Responding "HTTP/1.1 200 OK"
-17: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-18: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-19: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-20: CONNECT img12.360buyimg.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:22 2021
-20: Responding "HTTP/1.1 200 OK"
-21: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:23 2021
-22: CONNECT wq.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:24 2021
-22: Responding "HTTP/1.1 200 OK"
-23: CONNECT im-x.jd.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 09:12:26 2021
-23: Responding "HTTP/1.1 200 OK"
-23: Connection closed
+16: GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/icon_9.jpg HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:24 2021
+20: GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/search_button.png HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:24 2021
+19: GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/sousuok.png HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:24 2021
+18: GET http://www.gov.cn/govweb/c1293/202103/5591312/images/3668af804c914071aa418c58e76ce9df.jpg HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:24 2021
+17: GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/logo_wz1.jpg HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:24 2021
+21: CONNECT www.gov.cn:443 HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:32 2021
+21: Responding "HTTP/1.1 200 OK"
+22: GET http://www.gov.cn/govweb/c1295/202103/5590019/images/26f4ec3d25f94f35aa937443411f26ad.jpg HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:33 2021
+23: GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/logo.jpg HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:39 2021
+24: GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/icon_4.jpg HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:39 2021
+15: Connection closed
+14: Connection closed
+25: GET http://www.gov.cn/govweb/xhtml/zhuanti/2021qglhpcpage/images/20210305logoLianghui.png HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:41 2021
+26: GET http://recv-wd.gridsumdissector.com/gs.gif?gsver=3.5.0.1&gscmd=mc&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15196308iizl3124&pvid=151963066wt73124&gsltime=1615225114463&gstmzone=8&rd=lsk0c&btn=0&lt=%E5%90%AC%E5%8F%96%E5%85%A8%E5%9B%BD%E4%BA%BA%E6%B0%91%E4%BB%A3%E8%A1%A8%E5%A4%A7%E4%BC%9A%E5%B8%B8%E5%8A%A1%E5%A7%94%E5%91%98%E4%BC%9A%E5%B7%A5%E4%BD%9C%E6%8A%A5%E5%91%8A&lx=141&ly=317&lw=342&lh=27&gspver=ver20160531&gsmcoffsetx=283&gsmcoffsety=328&gstl=%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%BD%91_%E4%B8%AD%E5%A4%AE%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&gssn=0&gsscr=1424*879&gsorurl=http%3A%2F%2Fwww.gov.cn%2F&gsmcurl=http%3A%2F%2Fwww.gov.cn%2F&lk=http%3A%2F%2Fwww.gov.cn%2Fzhuanti%2F2021qglhzb%2Flive%2F20210308b683295.html HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:41 2021
+27: GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/201712_video1.png HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:41 2021
+28: GET http://www.gov.cn/govweb/c21731/202011/5566029/images/5cdc691cbda842a8af464c13b25e4bb5.jpg HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:42 2021
+29: GET http://www.gov.cn/govweb/c2753/202001/5466820/images/bac47b58ad8d47039a830aa35f37e1bf.png HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:43 2021
+12: Connection closed
+30: GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/nav_bg.jpg HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:48 2021
+31: GET http://recv.egovsum.com/gs.gif?gsver=3.5.0.1&gscmd=mc&gssrvid=GWD-801026&gsuid=15196306diba8x24&gssid=15196308iizl3124&pvid=151963066wt73124&gsltime=1615225114463&gstmzone=8&rd=l3bxt&btn=0&lt=%E5%90%AC%E5%8F%96%E5%85%A8%E5%9B%BD%E4%BA%BA%E6%B0%91%E4%BB%A3%E8%A1%A8%E5%A4%A7%E4%BC%9A%E5%B8%B8%E5%8A%A1%E5%A7%94%E5%91%98%E4%BC%9A%E5%B7%A5%E4%BD%9C%E6%8A%A5%E5%91%8A&lx=141&ly=317&lw=342&lh=27&gspver=ver20160531&gsmcoffsetx=283&gsmcoffsety=328&gstl=%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%BD%91_%E4%B8%AD%E5%A4%AE%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&gssn=0&gsscr=1424*879&gsorurl=http%3A%2F%2Fwww.gov.cn%2F&gsmcurl=http%3A%2F%2Fwww.gov.cn%2F&lk=http%3A%2F%2Fwww.gov.cn%2Fzhuanti%2F2021qglhzb%2Flive%2F20210308b683295.html HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:48 2021
+32: GET http://www.gov.cn/govweb/c1297/202102/5588089/files/340725b603cb4d81b4d98c8007f6774a.mp3 HTTP/1.1 from 172.19.0.1 @ Mon Mar  8 09:38:51 2021

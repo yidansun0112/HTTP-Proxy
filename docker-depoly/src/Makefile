@@ -6,4 +6,4 @@ main: main.cpp proxy.cpp log.cpp cache.cpp request.cpp response.cpp server.cpp
 .PHONY:
 	clean
 clean:
-	rm -rf *.o try
+	rm -rf *.o main
