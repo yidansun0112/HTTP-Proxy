@@ -16,7 +16,7 @@ string Response::getDate(){
 }
 
 string Response::getCacheControl (){
-  return findHelper("Cache-control");
+  return findHelper("Cache-Control");
 }
 
 string Response::getLastModify(){
@@ -28,7 +28,7 @@ string Response::getExpire(){
 }
 
 string Response::getEtag(){
-  return findHelper("Etag");
+  return findHelper("ETag");
 }
 
 string Response::findHelper(string toFind){
@@ -36,7 +36,7 @@ string Response::findHelper(string toFind){
   if(f1==string::npos){
     return "";
   }
-  size_t f2=response.find("\n",f1+1);
+  size_t f2=response.find("\r\n",f1+1);
   size_t len=toFind.size();
   string ans=response.substr(f1+len+2,f2-f1-len-2);
   return ans;
@@ -56,6 +56,7 @@ bool Response::isNoCache(){
 
 bool Response::checkHelper(string toCheck){
   string cacheControl=getCacheControl();
+  cout<<cacheControl<<endl;
   if(cacheControl!=""){
     size_t f=cacheControl.find(toCheck);
     if(f!=string::npos){
@@ -72,7 +73,7 @@ string Response::getMaxAge(){
     if(f1!=string::npos){
       size_t f2=cacheControl.find(" ",f1+1);
       if(f2==string::npos){
-        f2=cacheControl.find("\n",f1+1);
+        f2=cacheControl.find("\r\n",f1+1);
       }
       return cacheControl.substr(f1+8,f2-f1-8);
     }
@@ -97,7 +98,9 @@ time_t Response::getUTCTime(string strTime){
 double Response::getAge(){
   string date=getDate();
   time_t start=getUTCTime(date);
-  time_t now=time(NULL);
+  cout<<"start: "<<start<<endl;
+  time_t now=time(NULL)-28800;
+  cout<<"now: "<<now<<endl;
   return difftime(now,start);
 }
 
@@ -121,7 +124,7 @@ bool Response::isFresh(int thread_id){
   else if(expire!=""){
     cout<<"use expire"<<endl;
     time_t expireTime=getUTCTime(expire);
-    time_t now=time(NULL);
+    time_t now=time(NULL)-28800;
     bool fresh=now<expireTime;
     if(!fresh){
       string message=generateLogMsg(thread_id,"in cache, but expired at"+expire);
@@ -136,7 +139,9 @@ bool Response::isFresh(int thread_id){
     time_t dateTime=getUTCTime(date);
     time_t lastModifyTime=getUTCTime(lastModify);
     double freshTime=difftime(dateTime,lastModifyTime)/10.0;
+    cout<<"fresh: "<<freshTime<<endl;
     double currage=getAge();
+    cout<<"curr age: "<<currage<<endl;
     bool fresh=currage<freshTime;
     if(!fresh){
       writeRequireValidLog(thread_id);

@@ -1,5 +1,6 @@
 #include "cache.hpp"
 
+std::mutex copy_mutex;
 std::mutex cache_mutex;
 
 string Cache::get(string key){
@@ -69,7 +70,7 @@ void Cache::removeTail(){
 
 //copy constructor
 Cache::Cache(const Cache & rhs):mycache(),capacity(rhs.capacity),size(0){
-  //std::lock_guard<std::mutex> lck(cache_mutex);
+  std::lock_guard<std::mutex> lck(copy_mutex);
   head=new Node();
   tail=new Node();
   head->next=tail;
@@ -83,7 +84,7 @@ Cache::Cache(const Cache & rhs):mycache(),capacity(rhs.capacity),size(0){
 
 //assignment overload
 Cache& Cache::operator=(const Cache & rhs){
-  //std::lock_guard<std::mutex> lck(cache_mutex);
+  std::lock_guard<std::mutex> lck(copy_mutex);
   if(this!=&rhs){
     Cache temp(rhs);
     swap(temp.mycache,mycache);
@@ -131,6 +132,7 @@ bool Cache::storeResponse(string uri,Response rsp,int id){
       message=generateLogMsg(id,"cached, but requires re-validation");
     }
     writeToLog(message);
+    cout<<message<<endl;
     return true;
   }
   else{
@@ -146,6 +148,7 @@ bool Cache::storeResponse(string uri,Response rsp,int id){
     }
     string message=generateLogMsg(id,"not cacheable because "+reason);
     writeToLog(message);
+    cout<<message;
     return false;
   }
 }
@@ -155,10 +158,12 @@ string Cache::revalidate(Request request, Response response,int socket,int id){
   string lastModify=response.getLastModify();
   //if has e-tag, send if-none-match
   if(etag!=""){
+    cout<<"use etag"<<endl;
     return checkIfNoneMatch(request,response,socket,etag,id);
   }
   //else if has last-modify, send if-modified-since
   else if(lastModify!=""){
+    cout<<"use last modify"<<endl;
     return checkIfModifiedSince(request,response,socket,lastModify,id);
   }
   //else send all request
@@ -179,9 +184,11 @@ string Cache::checkIfModifiedSince(Request request,Response response,int socket,
 string Cache::reSendRequest(Request request, int socket,int id){
   cout<<"resend"<<endl;
   string origin=request.getRequest();
-  send(socket,&origin,sizeof(origin),0);
-  string response=recvString(socket);
-  Response newResponse(response);
+  //cout<<origin<<endl;
+  sendString(socket,origin);
+  vector<char> v;
+  my_recvFrom(socket,v);
+  Response newResponse(v);
   storeResponse(request.getURI(),newResponse,id);
   return newResponse.getResponse();
 }
@@ -191,10 +198,12 @@ string Cache::checkValidate(Request request,Response response,int socket, string
   cout<<"re validate"<<endl;
   string origin=request.getHeader();
   string newRequest=origin+"\r\n"+type+content+"\r\n\r\n";
+  cout<<newRequest;
   sendString(socket,newRequest);
   //receive new response
-  string nresponse=recvString(socket);
-  Response newResponse(nresponse);
+  vector<char> v;
+  my_recvFrom(socket,v);
+  Response newResponse(v);
   if(newResponse.getCode()=="304"){
     return response.getResponse();
   }
