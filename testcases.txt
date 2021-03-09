@@ -2,14 +2,12 @@
 GET
 ==============
 www.gov.cn
-1: GET http://www.gov.cn/ HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:18 2021
-2: GET http://ysp.www.gov.cn/013582404bd78ad3c016b8fffefe6a9a/allmobilize.min.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
-3: GET http://www.gov.cn/govweb/xhtml/2016gov/public/pic20181229/jquery.SuperSlide.2.1.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
-4: GET http://www.gov.cn/govweb/xhtml/zhuanti/20190719lkqkcyjglb/js/idangerous.swiper.min.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
-5: GET http://www.gov.cn/govweb/xhtml/2016gov/js/20191226wxShare.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
-6: GET http://www.gov.cn/govweb/xhtml/2016gov/js/jquery.date_input.pack.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
-8: GET http://www.gov.cn/govweb/xhtml/2016gov/js/hoverIndex.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
-11: GET http://www.gov.cn/govweb/xhtml/zhuanti/2017chinaEconomicHighlights/js/jquery.slider.20180517.js HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 10:52:19 2021
+1: GET http://detectportal.firefox.com/success.txt HTTP/1.1 from 172.18.0.1 @ Mon Mar  8 16:51:12 2021
+1: not in cache
+1: Requesting GET http://detectportal.firefox.com/success.txt HTTP/1.1 from detectportal.firefox.com
+1: Received HTTP/1.1 200 OK from detectportal.firefox.com
+1: cached, but requires re-validation
+1: Responding HTTP/1.1 200 OK
 
 ==============
 GET chunked
@@ -55,21 +53,6 @@ www.iqiyi.com
 4: CONNECT cache.video.iqiyi.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
 4: Responding "HTTP/1.1 200 OK"
 4: Connection closed
-5: CONNECT stc.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
-5: Responding "HTTP/1.1 200 OK"
-6: CONNECT www.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
-7: CONNECT static-s.iqiyi.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
-8: CONNECT pic2.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
-9: CONNECT pic3.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
-10: CONNECT pic9.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
-11: CONNECT pic7.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
-12: CONNECT pic0.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
-13: CONNECT pic1.iqiyipic.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:44 2021
-8: Responding "HTTP/1.1 200 OK"
-6: Responding "HTTP/1.1 200 OK"
-7: Responding "HTTP/1.1 200 OK"
-9: Responding "HTTP/1.1 200 OK"
-12: Responding "HTTP/1.1 200 OK"
 
 www.bilibili.com
 57: CONNECT www.bilibili.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:51 2021
@@ -78,24 +61,42 @@ www.bilibili.com
 58: Responding "HTTP/1.1 200 OK"
 59: CONNECT cache.video.iqiyi.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:52 2021
 59: Responding "HTTP/1.1 200 OK"
-60: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:52 2021
-61: GET http://i0.hdslb.com/bfs/archive/44107f806b29c1f7f395dccc55704156cc8268c4.jpg HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:53 2021
-62: CONNECT s1.hdslb.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:53 2021
-63: CONNECT s1.hdslb.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:53 2021
-62: Responding "HTTP/1.1 200 OK"
-63: Responding "HTTP/1.1 200 OK"
-64: CONNECT i0.hdslb.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
-64: Responding "HTTP/1.1 200 OK"
-65: CONNECT i1.hdslb.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
-66: CONNECT i2.hdslb.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
-66: Responding "HTTP/1.1 200 OK"
-65: Responding "HTTP/1.1 200 OK"
-67: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
-68: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
-69: POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
-70: GET http://i0.hdslb.com/favicon.ico HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
-72: CONNECT api.bilibili.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
-73: CONNECT cm.bilibili.com:443 HTTP/1.1 from 0.0.0.0 @ Mon Mar  8 11:02:54 2021
-72: Responding "HTTP/1.1 200 OK"
-73: Responding "HTTP/1.1 200 OK"
 
+==============
+cache
+==============
+in cache, valid
+150: GET http://www.gov.cn/govweb/xhtml/2016gov/images/public/logo.jpg HTTP/1.1 from 0.0.0.0 @ Tue Mar  9 08:10:03 2021
+150: in cache, valid
+150: Responding HTTP/1.1 200 OK
+
+in cache, revalidate (If-Modified-Since)(log wrire whole request only for test)
+273: GET http://js.player.cntv.cn/creator/swfobject.js HTTP/1.1 from 0.0.0.0 @ Tue Mar  9 10:19:16 2021
+273: in cache, requires validation
+273: revalidate request GET http://js.player.cntv.cn/creator/swfobject.js HTTP/1.1
+Host: js.player.cntv.cn
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:86.0) Gecko/20100101 Firefox/86.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://www.gov.cn/xinwen/2021-03/08/content_5591599.htm
+Cache-Control: max-age=0
+If-Modified-Since: Wed, 10 Jun 2020 01:39:10 GMT
+273: Responding HTTP/1.1 200 OK
+
+in cache, revalidate (If-None-Match)
+277: GET http://js.player.cntv.cn/creator/vodplayer.js HTTP/1.1 from 0.0.0.0 @ Tue Mar  9 10:19:16 2021
+277: in cache, requires validation
+277: revalidate request GET http://js.player.cntv.cn/creator/vodplayer.js HTTP/1.1
+Host: js.player.cntv.cn
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:86.0) Gecko/20100101 Firefox/86.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://www.gov.cn/xinwen/2021-03/08/content_5591599.htm
+Cache-Control: max-age=0
+If-None-Match: "66c5c63f5000eb504139aafc7ee6cff8"
+277: cached, expires at Tue, 09 Mar 2021 10:26:54 GMT
+277: Responding HTTP/1.1 200 OK
