@@ -63,12 +63,10 @@ void stay_connect(int browser_fd, int server_fd, int thread_id) {
     writeToLog(logMsg);
     fd_set readfds;
     int nfds = server_fd > browser_fd ? server_fd + 1 : browser_fd + 1;
-
     while (1) {
         FD_ZERO(&readfds);
         FD_SET(server_fd, &readfds);
         FD_SET(browser_fd, &readfds);
-
         select(nfds, &readfds, NULL, NULL, NULL);
         int fd[2] = {server_fd, browser_fd};
         int len;
@@ -90,20 +88,23 @@ void stay_connect(int browser_fd, int server_fd, int thread_id) {
 
 void post(int browser_fd, int server_fd, Request request, int thread_id){
     string req_msg = request.getWholeRequest();
-    int post_len = getLength(req_msg);  //get length of client request
+    int post_len = request.getContentLen();  //get length of client request
     if (post_len != -1) {
         sendString(server_fd,req_msg);
         char response[65536] = {0};
-        int response_len = recv(server_fd,response,sizeof(response),MSG_WAITALL);  //first time received response from server
+        int response_len = recv(server_fd,response,sizeof(response),MSG_WAITALL);
         if (response_len != 0) {
-            Response res;
-            //res.ParseLine(req_msg, len);   
-            //logFile << id << ": Received \"" << res.getLine() << "\" from " << host << std::endl;
-            std::cout << "receive response from server which is:" << response << std::endl;
+            Response res(response);
+            string log_msg = generateLogMsg(thread_id,"Received \""+res.getFirstLine()
+                                    +"\" from "+request.getHostname());
+            writeToLog(log_msg);
+            //cout << "received response: " << response << endl;
             send(browser_fd, response, response_len, 0);
-            //logFile << id << ": Responding \"" << res.getLine() << std::endl;
+            string log_msg2 = generateLogMsg(thread_id,"Responding \""+res.getFirstLine()+"\"");
+            writeToLog(log_msg2);
+            cout << "post successfully"<<endl;
         }else {
-            std::cout << "server socket closed!\n";
+            cout << "failed to post"<<endl;
         }
     }
 }
@@ -158,7 +159,12 @@ void *process_request(void * information){
             writeToLog(message);
             sendString(browser_fd,response);
             cout<<thread_id << ": "<<"response send"<<endl;
+        }catch(MyException e){
+            string log_msg = generateLogMsg(thread_id, e.what());
+            writeToLog(log_msg);
+            cerr<<thread_id<<": "<<e.what()<<endl;
         }
+        // the code below is the version without cache
         // try{
         //     //cout<<port<<endl;
         //     Client client(hostname.c_str(),port.c_str());
@@ -170,11 +176,11 @@ void *process_request(void * information){
         //     // string response(rsp.begin(),rsp.end());
         //     // sendString(browser_fd,response);
         // }
-        catch(MyException e){
-            string log_msg = generateLogMsg(thread_id, e.what());
-            writeToLog(log_msg);
-            cerr<<thread_id<<": "<<e.what()<<endl;
-        }
+        // catch(MyException e){
+        //     string log_msg = generateLogMsg(thread_id, e.what());
+        //     writeToLog(log_msg);
+        //     cerr<<thread_id<<": "<<e.what()<<endl;
+        // }    
     }else if(method=="CONNECT"){
         try{
             //cout<<thread_id << ": "<<port<<endl;
