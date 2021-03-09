@@ -1,6 +1,7 @@
 #include "proxy.hpp"
 #include <thread>
 pthread_mutex_t thread_mtx = PTHREAD_MUTEX_INITIALIZER;
+
 string check502(string response){
     string bad="HTTP/1.1 502 Bad Gateway\r\n\r\n";
     size_t f1=response.find("HTTP/1.1");
@@ -114,9 +115,6 @@ void *process_request(void * information){
     int browser_fd = info->browser_fd;
     string ip_addr = info->ip_addr;
     int thread_id = info->thread_id;
-    // cout<<browser_fd<<endl;
-    // cout<<ip_addr<<endl;
-    // cout<<thread_id<<endl;
     Cache *cache = info->cache;
     char request[65536] = {0};
     int len = recv(browser_fd, request, sizeof(request),0);
@@ -129,12 +127,6 @@ void *process_request(void * information){
     string req = string(request,len);
     cout<<"Thread: "<<thread_id<<" is created"<<endl;
     Request p(req);
-    // if(p.getRequest()==req){
-    //     cout<<"equals"<<endl;
-    // }
-    // else{
-    //     cout<<"not equal"<<endl;
-    // }
     string method = p.getMethod();
     string hostname=p.getHostname();
     string port=p.getPort();

@@ -154,8 +154,8 @@ void Socket::printInfo(){
     cout<<"port: "<<port<<endl;
 }
 
-std::string Socket::getHostPortInfo(){
-    std::string ans;
+string Socket::getHostPortInfo(){
+    string ans;
     if(this->hostname==NULL || this->port==NULL){
         cerr<<"hostname or port info is not available"<<endl;
     }else{
@@ -186,50 +186,32 @@ void sendString(int socket,string message){
     send(socket,message.data(),message.size()+1,0);
 }
 
-std::string recvWithLen(int sender_fd,string message,int content_len) {
-  int total_len = 0, recv_len = 0;
-  std::string ans = "";
-  while (total_len < content_len) {
-    char content[65536] = {0};
-    recv_len = recv(sender_fd, content, sizeof(content), 0);
-    if (recv_len <= 0) {
-      break;
+string recvWithLen(int sender_fd,string message,int content_len) {
+    int total_len = 0, recv_len = 0;
+    string ans = "";
+    while (total_len < content_len) {
+        char content[65536] = {0};
+        recv_len = recv(sender_fd, content, sizeof(content), 0);
+        if (recv_len <= 0) {
+            break;
+        }
+        string temp(content, recv_len);
+        ans.append(temp);
+        total_len += recv_len;
     }
-    std::string temp(content, recv_len);
-    ans.append(temp);
-    total_len += recv_len;
-  }
-  return message+ans;
+    return message+ans;
 }
 
 string recvChunked(int sender_fd,string message){
-    std::string ans = "";
+    string ans = "";
     while (1) {
         char content[65536] = {0};
         int recv_len = recv(sender_fd, content, sizeof(content), 0);
         if (recv_len <= 0) {
         break;
         }
-        std::string temp(content, recv_len);
+        string temp(content, recv_len);
         ans.append(temp);
     }
     return message+ans;
-}
-
-int getLength(string message) {
-  std::string msg = message;
-  size_t pos;
-  if ((pos = msg.find("Content-Length: ")) != std::string::npos) {
-    size_t head_end = msg.find("\r\n\r\n");
-
-    int part_body_len = msg.size() - static_cast<int>(head_end) - 8;
-    size_t end = msg.find("\r\n", pos);
-    std::string content_len = msg.substr(pos + 16, end - pos - 16);
-    int num = 0;
-    for (size_t i = 0; i < content_len.length(); i++) {
-      num = num * 10 + (content_len[i] - '0');
-    }
-    return num - part_body_len - 4;
-  }
-  return -1;
 }
