@@ -54,7 +54,6 @@ public:
     }
     void my_send(vector<char> &v);
     void my_recv(vector<char> &v);
-    string my_recv();
     void startAsClient();
 };
 
@@ -66,6 +65,6 @@ void checkMsgLen(int msg_len);
 void sendString(int socket,string message);
 std::string recvWithLen(int sender_fd,string message,int content_len);
 int getLength(string message);
-string recvString(int socket_fd);
+//string recvString(int socket_fd);
 #endif
 

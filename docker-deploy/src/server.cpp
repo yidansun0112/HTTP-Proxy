@@ -11,26 +11,26 @@ void Server::startAsServer(){
 
     this->status = getaddrinfo(this->hostname, this->port, &this->host_info, &this->host_info_list);
     if (this->status != 0) {
-        throw MyException("Error: cannot get address info for host\n",this->getHostPortInfo());
+        throw MyException("ERROR cannot get address info for host\n",this->getHostPortInfo());
     }
 
     this->socket_fd = socket(this->host_info_list->ai_family, 
 		     this->host_info_list->ai_socktype, 
 		     this->host_info_list->ai_protocol);
     if (this->socket_fd == -1) {
-        throw MyException("Error: cannot create socket\n",this->getHostPortInfo());
+        throw MyException("ERROR cannot create socket\n",this->getHostPortInfo());
     }
 
     int yes = 1;
     this->status = setsockopt(this->socket_fd, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(int));
     this->status = ::bind(this->socket_fd, this->host_info_list->ai_addr, this->host_info_list->ai_addrlen);
     if (this->status == -1) {
-        throw MyException("Error: cannot bind socket\n",this->getHostPortInfo());
+        throw MyException("ERROR cannot bind socket\n",this->getHostPortInfo());
     }
 
     this->status = listen(this->socket_fd, 100);
     if (this->status == -1) {
-        throw MyException("Error: cannot listen on socket\n",this->getHostPortInfo());
+        throw MyException("ERROR cannot listen on socket\n",this->getHostPortInfo());
     }
 }
 
@@ -42,19 +42,19 @@ void Client::startAsClient(){
 
     this->status = getaddrinfo(this->hostname, this->port, &this->host_info, &this->host_info_list);
     if (this->status != 0) {
-        throw MyException("Error: cannot get address info for host\n",this->getHostPortInfo());
+        throw MyException("ERROR cannot get address info for host\n",this->getHostPortInfo());
     }
 
     this->socket_fd = socket(this->host_info_list->ai_family, 
 		     this->host_info_list->ai_socktype, 
 		     this->host_info_list->ai_protocol);
     if (this->socket_fd == -1) {
-        throw MyException("Error: cannot create socket\n",this->getHostPortInfo());
+        throw MyException("ERROR cannot create socket\n",this->getHostPortInfo());
     }
 
     this->status = connect(this->socket_fd, this->host_info_list->ai_addr, this->host_info_list->ai_addrlen);
     if (this->status == -1) {
-        throw MyException("Error: cannot connect to socket\n",this->getHostPortInfo());
+        throw MyException("ERROR cannot connect to socket\n",this->getHostPortInfo());
     } //if
 }
 
@@ -65,7 +65,7 @@ int Server::accept_connection(string *ip_addr){
     int client_connection_fd;
     client_connection_fd = accept(this->socket_fd, (struct sockaddr *)&socket_addr, &socket_addr_len);
     if (client_connection_fd == -1) {
-        throw MyException("Error: cannot accept connection on socket","");
+        throw MyException("ERROR cannot accept connection on socket","");
     } //if
     *ip_addr = inet_ntoa(((struct sockaddr_in *)&socket_addr)->sin_addr);
     return client_connection_fd;
@@ -74,9 +74,9 @@ int Server::accept_connection(string *ip_addr){
 void my_recvFrom(int fd, vector<char> &v){
     ssize_t index = 0;
     v.resize(65536);
-    cout<<"1"<<endl;
+    //cout<<"1"<<endl;
     ssize_t msg_len = recv(fd,&v.data()[index],v.size(),0);
-    cout<<"2"<<endl;
+    //cout<<"2"<<endl;
     checkMsgLen(msg_len);
     index+=msg_len;
     Response r=Response(v);
@@ -98,14 +98,15 @@ void my_recvFrom(int fd, vector<char> &v){
             res="";
             res.insert(res.begin(),v.begin()+index,v.begin()+index+msg_len);
             index+=msg_len;
-            cout<<res.size()<<endl;
+            //cout<<res.size()<<endl;
         }
+        cout<<"the recieved length is "<<index<<endl;
         cout<<"finish receiving"<<endl;
         return;
     }
     else{
         int len=r.getContentLength();
-        cout<<"content-length is "<<len<<endl;
+        cout<<"not chunked, content-length is "<<len<<endl;
         while(index<len){
             v.resize(index+65536);
             msg_len = recv(fd,&v.data()[index],v.size(),0);
@@ -115,55 +116,9 @@ void my_recvFrom(int fd, vector<char> &v){
             }
             index+=msg_len;
         }
-    }
-}
-string my_recvFrom(int fd){
-    ssize_t index = 0;
-    char msg[65536] = {0};
-    cout<<"1"<<endl;
-    ssize_t msg_len = recv(fd,msg,65536,0);
-    cout<<"2"<<endl;
-    checkMsgLen(msg_len);
-    string message(msg,msg_len);
-    index += msg_len;
-    Response r=Response(message);
-    //cout<<r.getResponse()<<endl;
-    if(r.getCode()=="304"){
-        return message;
-    }
-    if(r.isChunked()){
-        cout<<"is chunked"<<endl;
-        while(message.find("0\r\n\r\n")==string::npos){
-            char temp[65536] = {0};
-            int res_len = recv(fd,temp,65536,0);
-            //checkMsgLen(msg_len);
-            if(msg_len<=0){
-                break;
-            }
-            string temp_str(temp,res_len);
-            message+=temp_str;
-            cout<<temp_str.size()<<endl;
-        }
+        cout<<"the recieved length is "<<index<<endl;
         cout<<"finish receiving"<<endl;
-        return message;
     }
-    else{
-        int len=r.getContentLength();
-        cout<<"content-length is "<<len<<endl;
-        while(index<len){
-            char temp[65536] = {0};
-            int res_len = recv(fd,temp,65536,0);
-            //checkMsgLen(msg_len);
-            if(res_len<=0){
-                break;
-            }
-            index+=res_len;
-            string temp_str(temp,res_len);
-            message+=temp_str;
-        }
-        return message;
-    }
-    return message;
 }
 
 void checkMsgLen(int msg_len){
@@ -182,9 +137,6 @@ void my_sendTo(int fd, vector<char> &v){
     }
 }
 
-string Client::my_recv(){
-    return my_recvFrom(this->socket_fd);
-}
 
 void Client::my_recv(vector<char> &v){
     my_recvFrom(this->socket_fd, v);
@@ -230,7 +182,7 @@ void init_fdset(fd_set &readfds, vector<int> fds, int &nfds){
 void sendString(int socket,string message){
     // char ch[message.size()+1]={0};
     // strcpy(ch,message.c_str());
-    cout<<message.data();
+    //cout<<message.data();
     send(socket,message.data(),message.size()+1,0);
 }
 
@@ -280,25 +232,4 @@ int getLength(string message) {
     return num - part_body_len - 4;
   }
   return -1;
-}
-
-string recvString(int socket_fd){
-    cout<<"recv start"<<endl;
-    char rsp[65536] = {0};
-    int len = recv(socket_fd, rsp, sizeof(rsp),0);
-    string response(rsp,len);
-    Response r(response);
-    string finalResponse;
-    if(r.isChunked()){
-        cout<<"recv chunk"<<endl;
-        finalResponse=recvChunked(socket_fd,response);
-        cout<<"recv chunk finish"<<endl;
-    }
-    else{
-        cout<<"recv content len"<<endl;
-        int contentLen=getLength(response);
-        finalResponse=recvWithLen(socket_fd,response,contentLen);
-        cout<<"recv content len finish"<<endl;
-    }
-    return finalResponse;
 }

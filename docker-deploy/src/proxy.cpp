@@ -7,9 +7,9 @@ string check502(string response){
     if(f1==string::npos){
         return bad;
     }
-    // if(response.find("\r\n\r\n")==string::npos){  
-    //     return bad;
-    // }
+    if(response.find("\r\n\r\n")==string::npos){  
+        return bad;
+    }
     return "";
 }
 
@@ -50,7 +50,7 @@ string getResponseGet(Request request,Cache &cache,int thread_id){
         // }
         Response rsp(r);
         writeReceiveLog(rsp.getFirstLine(),hostname,thread_id);
-        response=rsp.getResponse();
+        response = string(r.begin(),r.end());
         cache.storeResponse(uri,rsp,thread_id);
         cout<<"store in cache"<<endl;
     }
@@ -92,13 +92,7 @@ void post(int browser_fd, int server_fd, Request request, int thread_id){
     string req_msg = request.getWholeRequest();
     int post_len = getLength(req_msg);  //get length of client request
     if (post_len != -1) {
-        // cout<<endl<<endl<<"Request_msg sent:"<<endl<<req_msg<<endl<<endl;
-        // std::string request = recvWithLen(browser_fd, req_msg, post_len);
-        // cout<<endl<<endl<<"Request sent:"<<endl<<request<<endl<<endl;
         sendString(server_fd,req_msg);
-        // char send_request[request.length() + 1];
-        // strcpy(send_request, request.c_str());
-        // send(server_fd,send_request,sizeof(send_request),MSG_NOSIGNAL);  // send all the request info from client to server
         char response[65536] = {0};
         int response_len = recv(server_fd,response,sizeof(response),MSG_WAITALL);  //first time received response from server
         if (response_len != 0) {
@@ -119,10 +113,9 @@ void *process_request(void * information){
     int browser_fd = info->browser_fd;
     string ip_addr = info->ip_addr;
     int thread_id = info->thread_id;
-    cout<<browser_fd<<endl;
-    cout<<ip_addr<<endl;
-    cout<<thread_id<<endl;
-
+    // cout<<browser_fd<<endl;
+    // cout<<ip_addr<<endl;
+    // cout<<thread_id<<endl;
     Cache *cache = info->cache;
     char request[65536] = {0};
     int len = recv(browser_fd, request, sizeof(request),0);
@@ -134,19 +127,17 @@ void *process_request(void * information){
     }
     string req = string(request,len);
     cout<<"Thread: "<<thread_id<<" is created"<<endl;
-    
-
     Request p(req);
-    if(p.getRequest()==req){
-        cout<<"equals"<<endl;
-    }
-    else{
-        cout<<"not equal"<<endl;
-    }
+    // if(p.getRequest()==req){
+    //     cout<<"equals"<<endl;
+    // }
+    // else{
+    //     cout<<"not equal"<<endl;
+    // }
     string method = p.getMethod();
     string hostname=p.getHostname();
     string port=p.getPort();
-    cout<<req<<endl;
+    cout<<thread_id << ": "<<p.getFirstLine()<<endl;
     if(p.isValid()){
         std::string errMsg = p.getFirstLine()+" from "+ip_addr+" @ "+currTime();
         string log_msg = generateLogMsg(thread_id,errMsg);
@@ -158,45 +149,54 @@ void *process_request(void * information){
         writeToLog(log_msg);
     }
     if(method=="GET"){
-        // try{
-        //     cout<<"try get response"<<endl;
-        //     string response=getResponseGet(p,*cache,thread_id);
-        //     //cout<<response<<endl;
-        //     Response rsp(response);
-        //     string message=generateLogMsg(thread_id,"Responding "+rsp.getFirstLine());
-        //     writeToLog(message);
-        //     sendString(browser_fd,response);
-        //     cout<<"response send"<<endl;
-        // } 
         try{
-            cout<<port<<endl;
-            Client client(hostname.c_str(),port.c_str());
-            send(client.socket_fd,request,len,0);
-            vector<char> rsp;
-            client.my_recv(rsp);
-            my_sendTo(browser_fd,rsp);
-            // string response=client.my_recv();
-            // sendString(browser_fd,response);
+            cout<<thread_id << ": "<<"try get response"<<endl;
+            string response=getResponseGet(p,*cache,thread_id);
+            //cout<<response<<endl;
+            Response rsp(response);
+            string message=generateLogMsg(thread_id,"Responding "+rsp.getFirstLine());
+            writeToLog(message);
+            sendString(browser_fd,response);
+            cout<<thread_id << ": "<<"response send"<<endl;
         }
+        // try{
+        //     //cout<<port<<endl;
+        //     Client client(hostname.c_str(),port.c_str());
+        //     send(client.socket_fd,request,len,0);
+        //     vector<char> rsp;
+        //     client.my_recv(rsp);
+        //     my_sendTo(browser_fd,rsp);
+        //     //string response = client.my_recv();
+        //     // string response(rsp.begin(),rsp.end());
+        //     // sendString(browser_fd,response);
+        // }
         catch(MyException e){
             string log_msg = generateLogMsg(thread_id, e.what());
             writeToLog(log_msg);
+            cerr<<thread_id<<": "<<e.what()<<endl;
         }
     }else if(method=="CONNECT"){
         try{
-            cout<<port<<endl;
+            //cout<<thread_id << ": "<<port<<endl;
             Client client(hostname.c_str(),port.c_str());
             stay_connect(browser_fd,client.socket_fd,thread_id);
-            string log_msg = generateLogMsg(thread_id, "Connection closed");
+            string log_msg = generateLogMsg(thread_id, "Tunnel closed");
             writeToLog(log_msg);
         }
         catch(MyException e){
             string log_msg = generateLogMsg(thread_id, e.what());
             writeToLog(log_msg);
+            cerr<<thread_id<<": "<<e.what()<<endl;
         }
     }else if(method=="POST"){
-        Client client(hostname.c_str(),port.c_str());
-        post(browser_fd,client.socket_fd,p,thread_id);
+        try{
+            Client client(hostname.c_str(),port.c_str());
+            post(browser_fd,client.socket_fd,p,thread_id);
+        }catch(MyException e){
+            string log_msg = generateLogMsg(thread_id, e.what());
+            writeToLog(log_msg);
+            cerr<<thread_id<<": "<<e.what()<<endl;
+        }
     }
     return NULL;
 }
