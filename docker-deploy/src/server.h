@@ -62,8 +62,7 @@ void my_sendTo(int fd, vector<char> &v);
 void init_fdset(fd_set &readfds, vector<int> fds, int &nfds);
 void checkMsgLen(int msg_len);
 void sendString(int socket,string message);
-std::string recvWithLen(int sender_fd,string message,int content_len);
-int getLength(string message);
-string recvString(int socket_fd);
+string recvWithLen(int sender_fd,string message,int content_len);
+string recvChunked(int sender_fd,string message);
 #endif
 

@@ -132,7 +132,7 @@ bool Cache::storeResponse(string uri,Response rsp,int id){
       message=generateLogMsg(id,"cached, but requires re-validation");
     }
     writeToLog(message);
-    cout<<message<<endl;
+    //cout<<message<<endl;
     return true;
   }
   else{
@@ -148,7 +148,7 @@ bool Cache::storeResponse(string uri,Response rsp,int id){
     }
     string message=generateLogMsg(id,"not cacheable because "+reason);
     writeToLog(message);
-    cout<<message;
+    //cout<<message;
     return false;
   }
 }
@@ -198,7 +198,7 @@ string Cache::checkValidate(Request request,Response response,int socket, string
   cout<<"re validate"<<endl;
   string origin=request.getHeader();
   string newRequest=origin+"\r\n"+type+content+"\r\n\r\n";
-  cout<<newRequest;
+  //cout<<newRequest;
   sendString(socket,newRequest);
   //receive new response
   vector<char> v;

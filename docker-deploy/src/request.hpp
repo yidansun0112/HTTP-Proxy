@@ -49,6 +49,7 @@ public:
   }
   bool isValid();
   string getHeader();
+  int getContentLen();
 };
 
 #endif

@@ -9,7 +9,7 @@ Request::Request(vector<char> v){
     findMethod();
     findURI();
     findHostPort();
-  }
+}
 
 void Request::findMethod(){
   size_t found=request.find(' ');
@@ -62,4 +62,16 @@ bool Request::isValid(){
 string Request::getHeader(){
   size_t f=wholeRequest.find("\r\n\r\n");
   return wholeRequest.substr(0,f);
+}
+
+int Request::getContentLen() {
+    size_t pos = wholeRequest.find("Content-Length: ");
+    if (pos == std::string::npos) {
+        return -1;
+    }
+    size_t header = wholeRequest.find("\r\n\r\n");
+    int rest_len = wholeRequest.size() - int(header) - 8;
+    size_t end = wholeRequest.find("\r\n", pos);
+    int content_len = stoi(wholeRequest.substr(pos + 16, end - pos - 16));
+    return content_len - rest_len - 4;
 }

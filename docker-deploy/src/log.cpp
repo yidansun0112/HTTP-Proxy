@@ -44,16 +44,3 @@ std::string currTime() {
   return tme.substr(0,tme.size()-1);
 }
 
-
-std::string generateLogMsg(int thread_id, vector<string> &errInfo){
-    std::stringstream stream;
-    stream << thread_id << ": ";
-    for(int i = 0; i< errInfo.size();i++){
-        stream << errInfo[i];
-    }
-    stream<<endl;
-    string log_msg = stream.str();
-    stream.str("");
-    return log_msg;
-}
-
