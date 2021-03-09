@@ -27,9 +27,9 @@ std::string generateLogMsg(int thread_id, std::string errInfo){
     return log_msg;
 }
 
-void tryOpenFile(){
+void tryOpenFile(string filepath){
   try {
-      file.open("proxy.log", std::ostream::out);
+      file.open(filepath, std::ostream::out);
   } catch (std::exception &e) {
       cout << e.what() << std::endl;
       exit(EXIT_FAILURE);

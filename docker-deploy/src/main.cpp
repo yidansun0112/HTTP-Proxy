@@ -3,7 +3,7 @@
 int main(){
     Cache cache(20);
     int thread_id = 0;
-    tryOpenFile();
+    tryOpenFile("/var/log/erss/proxy.log");
     while(1){
         try{
             Server server(PORT);

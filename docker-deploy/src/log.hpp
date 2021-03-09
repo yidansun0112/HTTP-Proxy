@@ -14,7 +14,7 @@ void writeRequestLog(string request,string hostname,int thread_id);
 void writeReceiveLog(string response,string hostname,int thread_id);
 void writeToLog(string &str);
 std::string generateLogMsg(int thread_id, std::string errInfo);
-void tryOpenFile();
+void tryOpenFile(string filepath);
 void mylock();
 std::string currTime();
 
