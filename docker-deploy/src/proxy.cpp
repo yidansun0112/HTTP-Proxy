@@ -158,26 +158,26 @@ void *process_request(void * information){
         writeToLog(log_msg);
     }
     if(method=="GET"){
-        try{
-            cout<<"try get response"<<endl;
-            string response=getResponseGet(p,*cache,thread_id);
-            //cout<<response<<endl;
-            Response rsp(response);
-            string message=generateLogMsg(thread_id,"Responding "+rsp.getFirstLine());
-            writeToLog(message);
-            sendString(browser_fd,response);
-            cout<<"response send"<<endl;
-        } 
         // try{
-        //     cout<<port<<endl;
-        //     Client client(hostname.c_str(),port.c_str());
-        //     send(client.socket_fd,request,len,0);
-        //     vector<char> rsp;
-        //     client.my_recv(rsp);
-        //     my_sendTo(browser_fd,rsp);
-        //     // string response=recvString(client.socket_fd);
-        //     // sendString(browser_fd,response);
-        // }
+        //     cout<<"try get response"<<endl;
+        //     string response=getResponseGet(p,*cache,thread_id);
+        //     //cout<<response<<endl;
+        //     Response rsp(response);
+        //     string message=generateLogMsg(thread_id,"Responding "+rsp.getFirstLine());
+        //     writeToLog(message);
+        //     sendString(browser_fd,response);
+        //     cout<<"response send"<<endl;
+        // } 
+        try{
+            cout<<port<<endl;
+            Client client(hostname.c_str(),port.c_str());
+            send(client.socket_fd,request,len,0);
+            vector<char> rsp;
+            client.my_recv(rsp);
+            my_sendTo(browser_fd,rsp);
+            // string response=client.my_recv();
+            // sendString(browser_fd,response);
+        }
         catch(MyException e){
             string log_msg = generateLogMsg(thread_id, e.what());
             writeToLog(log_msg);

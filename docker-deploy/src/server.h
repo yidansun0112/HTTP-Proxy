@@ -54,10 +54,12 @@ public:
     }
     void my_send(vector<char> &v);
     void my_recv(vector<char> &v);
+    string my_recv();
     void startAsClient();
 };
 
 void my_recvFrom(int fd, vector<char> &v);
+string my_recvFrom(int fd);
 void my_sendTo(int fd, vector<char> &v);
 void init_fdset(fd_set &readfds, vector<int> fds, int &nfds);
 void checkMsgLen(int msg_len);

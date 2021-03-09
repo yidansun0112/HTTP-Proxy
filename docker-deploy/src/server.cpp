@@ -117,7 +117,54 @@ void my_recvFrom(int fd, vector<char> &v){
         }
     }
 }
-
+string my_recvFrom(int fd){
+    ssize_t index = 0;
+    char msg[65536] = {0};
+    cout<<"1"<<endl;
+    ssize_t msg_len = recv(fd,msg,65536,0);
+    cout<<"2"<<endl;
+    checkMsgLen(msg_len);
+    string message(msg,msg_len);
+    index += msg_len;
+    Response r=Response(message);
+    //cout<<r.getResponse()<<endl;
+    if(r.getCode()=="304"){
+        return message;
+    }
+    if(r.isChunked()){
+        cout<<"is chunked"<<endl;
+        while(message.find("0\r\n\r\n")==string::npos){
+            char temp[65536] = {0};
+            int res_len = recv(fd,temp,65536,0);
+            //checkMsgLen(msg_len);
+            if(msg_len<=0){
+                break;
+            }
+            string temp_str(temp,res_len);
+            message+=temp_str;
+            cout<<temp_str.size()<<endl;
+        }
+        cout<<"finish receiving"<<endl;
+        return message;
+    }
+    else{
+        int len=r.getContentLength();
+        cout<<"content-length is "<<len<<endl;
+        while(index<len){
+            char temp[65536] = {0};
+            int res_len = recv(fd,temp,65536,0);
+            //checkMsgLen(msg_len);
+            if(res_len<=0){
+                break;
+            }
+            index+=res_len;
+            string temp_str(temp,res_len);
+            message+=temp_str;
+        }
+        return message;
+    }
+    return message;
+}
 
 void checkMsgLen(int msg_len){
     if(msg_len==0){
@@ -135,6 +182,9 @@ void my_sendTo(int fd, vector<char> &v){
     }
 }
 
+string Client::my_recv(){
+    return my_recvFrom(this->socket_fd);
+}
 
 void Client::my_recv(vector<char> &v){
     my_recvFrom(this->socket_fd, v);
