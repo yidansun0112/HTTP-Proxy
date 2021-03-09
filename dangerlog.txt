@@ -17,3 +17,6 @@ Danger log
   4.1 Our cache was built based on linked list. And we followed rule of 3 by adding copy constructor, assignment operator and destructor.
       Our assignment operator used temp-swap strategy and make sure it has strong guarantee.
       I tested this part seperately. It had no error in valgrind and was memory free.
+  4.2 While using socket to communicate with the proxy and remote server, many steps in this process could go wrong.
+      We checked the return value of those sokect-related functions and throw corresponding exceptions,
+      letting the upper level function catch them and write suitable records into the log, without aborting the proxy.
